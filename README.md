@@ -6,7 +6,7 @@
 
 [![Resume Preview](https://raw.githubusercontent.com/IamGiel/resume/master/img/gelsphoto.png)](https://raw.githubusercontent.com/IamGiel/resume/master/img/gelsphoto.png)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
+**[View Live Preview](https://iamgiel.github.io/resume/)**
 
 ## Status
 
