@@ -1,0 +1,876 @@
+[{
+        "Name": "CARGILL GHANA LTD",
+        "City": "SÃO PAULO",
+        "Country": "United States",
+        "Industry": "Beauty Shops",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "CARGILL, INCORPORATED",
+        "City": "Dongguan City",
+        "Country": "Turkey",
+        "Industry": "Drinking Places",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "Berry Plastics Group, Inc.",
+        "City": "JUNDIAI",
+        "Country": "China",
+        "Industry": "Heavy Construction",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "IPG",
+        "City": "NOVI",
+        "Country": "India",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "AT&T CORP.",
+        "City": "ROCHESTER HILLS",
+        "Country": "United States",
+        "Industry": "Engineering Services",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "CLYDE MACHINES, INC.",
+        "City": "SOLBERGELVA",
+        "Country": "China",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "ESRP ADVISORY DALLAS, LLC",
+        "City": "Traun",
+        "Country": "Japan",
+        "Industry": "General Farms",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "GLOBAL GROUND SUPPORT, LLC",
+        "City": "WAKEFIELD",
+        "Country": "Spain",
+        "Industry": "Beauty Shops",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "HARRIS & FORD, LLC",
+        "City": "Chadonnet",
+        "Country": "Canada",
+        "Industry": "Drinking Places",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "INTERFACE, INC.",
+        "City": "Teichstrasse",
+        "Country": "France",
+        "Industry": "Heavy Construction",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "JOHN BEAN TECHNOLOGIES CORPORATION",
+        "City": "HERNING",
+        "Country": "Peru",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "MILLIKEN & COMPANY",
+        "City": "MALMOE",
+        "Country": "England",
+        "Industry": "Engineering Services",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "PURECIRCLE USA INC.",
+        "City": "MOUNT PROSPECT",
+        "Country": "United States",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "QUALITY SAUSAGE COMPANY, INC.",
+        "City": "CONROE",
+        "Country": "Turkey",
+        "Industry": "General Farms",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "RECORD PRINTING CO., INC. OF STORY CITY",
+        "City": "Orem",
+        "Country": "China",
+        "Industry": "Beauty Shops",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "Rousselot Dubuque Inc.",
+        "City": "Inglewood",
+        "Country": "India",
+        "Industry": "Drinking Places",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "SAGE PARTS PLUS, INC.",
+        "City": "Sunrise",
+        "Country": "United States",
+        "Industry": "Heavy Construction",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "SQC, LLC",
+        "City": "Dayton",
+        "Country": "China",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "TONY DOWNS FOODS CO.",
+        "City": "Providence",
+        "Country": "Japan",
+        "Industry": "Engineering Services",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "TRANSPERFECT, INC.",
+        "City": "Santo Domingo",
+        "Country": "Spain",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "Thompsons Limited",
+        "City": "Wilshire Park",
+        "Country": "Canada",
+        "Industry": "General Farms",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "Kelly Services (Parent)",
+        "City": "Four Corners",
+        "Country": "France",
+        "Industry": "Beauty Shops",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "Thermo Fisher Scientific",
+        "City": "Bern",
+        "Country": "Peru",
+        "Industry": "Drinking Places",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "UPS",
+        "City": "Chisinau",
+        "Country": "England",
+        "Industry": "Heavy Construction",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "CBRE Group Inc.",
+        "City": "Honolulu",
+        "Country": "United States",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "Gel",
+        "City": "Bishkek",
+        "Country": "Turkey",
+        "Industry": "Engineering Services",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "ESSENTRA INDUSTRIA E COMERCIO LTDA",
+        "City": "Astoria",
+        "Country": "China",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "EWES Asia Pacific HK Ltd",
+        "City": "Sawgrass Mills Mal",
+        "Country": "India",
+        "Industry": "General Farms",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "FLORICULTURA VILLA BELLA LTDA ME",
+        "City": "Alofi",
+        "Country": "United States",
+        "Industry": "Beauty Shops",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "POTBELLY SANDWICH SHOP (POTBELLY  CORPORATION)",
+        "City": "Alta",
+        "Country": "China",
+        "Industry": "Drinking Places",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "3 DIMENSIONAL SERVICES",
+        "City": "Back Bay",
+        "Country": "Japan",
+        "Industry": "Heavy Construction",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3A PRODUKTER ASBJØRN ANTONSEN",
+        "City": "Port-au-Prince",
+        "Country": "Spain",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "3D - Messtechnik GmbH",
+        "City": "Richmond",
+        "Country": "Canada",
+        "Industry": "Engineering Services",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "5 STAR LOCAL CARS",
+        "City": "Renton",
+        "Country": "France",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "A RAYMOND FLUID CONNECTION FRANCE",
+        "City": "New Rochelle",
+        "Country": "Peru",
+        "Industry": "General Farms",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "A. RAYMOND GMBH & CO. KG",
+        "City": "San Bernardino",
+        "Country": "England",
+        "Industry": "Beauty Shops",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "A/S JYDSK ALUMINIUM INDUSTRI",
+        "City": "Tokyo",
+        "Country": "United States",
+        "Industry": "Drinking Places",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "JARLE HUSEBY GRAVESERVICE",
+        "City": "Beaverton",
+        "Country": "Turkey",
+        "Industry": "Heavy Construction",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "JESSE HENRIKSON",
+        "City": "Manoa",
+        "Country": "China",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "I.T. SUPRIMENTOS LTDA.-EPP",
+        "City": "Gastonia",
+        "Country": "India",
+        "Industry": "Engineering Services",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "MONS BRYNILDSRUD MASKIN",
+        "City": "Jackson",
+        "Country": "United States",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "MULT COMERCIAL LTDA",
+        "City": "Mesquite",
+        "Country": "China",
+        "Industry": "General Farms",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "PPO SK s.r.o.",
+        "City": "Richardson",
+        "Country": "Japan",
+        "Industry": "Beauty Shops",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "QT-BRIGHTEK CORPORATION",
+        "City": "Grafton",
+        "Country": "Spain",
+        "Industry": "Drinking Places",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "RL SISTEMAS DE HIGIENE LTDA.",
+        "City": "Reno",
+        "Country": "Canada",
+        "Industry": "Heavy Construction",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "Schuchart Tief- und Straßenbau",
+        "City": "Tucson",
+        "Country": "France",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "SERTHI HIDRAULICA LTDA",
+        "City": "Bearden",
+        "Country": "Peru",
+        "Industry": "Engineering Services",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "STOLBERGER INCORPORATED DBA",
+        "City": "Washington Heights",
+        "Country": "England",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "TERUKO TANAKA - ME",
+        "City": "Des Plaines",
+        "Country": "United States",
+        "Industry": "General Farms",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "Texcentrum s. r. o",
+        "City": "Waterloo",
+        "Country": "Turkey",
+        "Industry": "Beauty Shops",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "Geld Inc",
+        "City": "Southpark Mall",
+        "Country": "China",
+        "Industry": "Drinking Places",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "Bankkártyás fizetés",
+        "City": "Timbuktu",
+        "Country": "India",
+        "Industry": "Heavy Construction",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "DER GEGENPOL",
+        "City": "Flour Bluff",
+        "Country": "United States",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "(HWL) Chongqing Hengweilin Automotive",
+        "City": "Palmyra",
+        "Country": "China",
+        "Industry": "Engineering Services",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "(Shanghai Pudong) PULU Hardware",
+        "City": "Ames",
+        "Country": "Japan",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "(Shanghai Pudong) PUYU Industry",
+        "City": "Nampa",
+        "Country": "Spain",
+        "Industry": "General Farms",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "(Shijiazhuang Yecheng) DAYING",
+        "City": "Nairobi",
+        "Country": "Canada",
+        "Industry": "Beauty Shops",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "(Yancheng Economic Devlp. Zone)",
+        "City": "Sigma",
+        "Country": "France",
+        "Industry": "Drinking Places",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "(Zhejiang Cixi) JINGFENG",
+        "City": "Zhejiang",
+        "Country": "Peru",
+        "Industry": "Heavy Construction",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "(Zhejiang Yuhuan County) XIANDAI",
+        "City": "Yuhuan",
+        "Country": "England",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "1 STOP JETTING LIMITED",
+        "City": "Ballarpur",
+        "Country": "United States",
+        "Industry": "Engineering Services",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "1&1 Internet Inc",
+        "City": "Inglewood",
+        "Country": "Turkey",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "1. Plastcompany, spol. s.r.o.",
+        "City": "Ponce",
+        "Country": "China",
+        "Industry": "General Farms",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "1000 MARCAS LTDA",
+        "City": "Los Serranos",
+        "Country": "India",
+        "Industry": "Beauty Shops",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "1001 SERVIÇOS FECILITES EIRELI-ME",
+        "City": "Gold Coast",
+        "Country": "United States",
+        "Industry": "Drinking Places",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "123 preklady.eu Slovakia, s.r.o.",
+        "City": "Sihla",
+        "Country": "China",
+        "Industry": "Heavy Construction",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "24 FIRE AND SECURITY LTD",
+        "City": "Farmington",
+        "Country": "Japan",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "247 LOGISTIC AB",
+        "City": "Chisinau",
+        "Country": "Spain",
+        "Industry": "Engineering Services",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "2a CAD GLOBAL GROUP SL",
+        "City": "Harlem",
+        "Country": "Canada",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "2Am Group LLC",
+        "City": "Columbia",
+        "Country": "France",
+        "Industry": "General Farms",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "2CPRINT",
+        "City": "Montgomery",
+        "Country": "Peru",
+        "Industry": "Beauty Shops",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "2Mservices s.r.o..",
+        "City": "Nicosia",
+        "Country": "England",
+        "Industry": "Drinking Places",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "2R SRL",
+        "City": "Perth",
+        "Country": "United States",
+        "Industry": "Heavy Construction",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3D - Messtechnik GmbH",
+        "City": "Edmonton",
+        "Country": "Turkey",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "3D METRISOFT SA DE CV",
+        "City": "Carlsbad",
+        "Country": "China",
+        "Industry": "Engineering Services",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "Cognizant Technology Solutions Lithuania UAB",
+        "City": "Lisbon",
+        "Country": "India",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3D prototipai, UAB",
+        "City": "Asheville",
+        "Country": "United States",
+        "Industry": "General Farms",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "3D SCANNERS (UK) LTD.",
+        "City": "Chino Hills",
+        "Country": "China",
+        "Industry": "Beauty Shops",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "3D SCANTECH LTD",
+        "City": "La Crosse",
+        "Country": "Japan",
+        "Industry": "Drinking Places",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3D SORTING",
+        "City": "Longreach",
+        "Country": "Spain",
+        "Industry": "Heavy Construction",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "3d Systems  Inc",
+        "City": "Todt Hill",
+        "Country": "Canada",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "3D Systems Corp",
+        "City": "LANE, FRESHFIELD, FORMBYMERSEYSIDE      ",
+        "Country": "France",
+        "Industry": "Engineering Services",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3d Systems  Inc",
+        "City": "SÃO PAULO",
+        "Country": "Peru",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "Three-Dimensional Services Inc",
+        "City": "Dongguan City",
+        "Country": "England",
+        "Industry": "General Farms",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "3J-3D int, s.r.o.",
+        "City": "JUNDIAI",
+        "Country": "United States",
+        "Industry": "Beauty Shops",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3L HOTMELT AB",
+        "City": "NOVI",
+        "Country": "Turkey",
+        "Industry": "Drinking Places",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "3m Svenska AB",
+        "City": "ROCHESTER HILLS",
+        "Country": "China",
+        "Industry": "Heavy Construction",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "3m Svenska AB",
+        "City": "SOLBERGELVA",
+        "Country": "India",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3M Gulf Ltd (Dubai Branch)",
+        "City": "Traun",
+        "Country": "United States",
+        "Industry": "Engineering Services",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "3M Poland sp. z o.o.",
+        "City": "WAKEFIELD",
+        "Country": "China",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "3P",
+        "City": "Chadonnet",
+        "Country": "Japan",
+        "Industry": "General Farms",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "3PACK group a.s.",
+        "City": "Teichstrasse",
+        "Country": "Spain",
+        "Industry": "Beauty Shops",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "3ST AB",
+        "City": "HERNING",
+        "Country": "Canada",
+        "Industry": "Drinking Places",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "4 ELEMENTS,INC",
+        "City": "MALMOE",
+        "Country": "France",
+        "Industry": "Heavy Construction",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "Marks and Spencer Hungary Kft",
+        "City": "Cegled",
+        "Country": "Peru",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "407 ETR Concession Company Ltd",
+        "City": "CONROE",
+        "Country": "England",
+        "Industry": "Engineering Services",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "42 THE BAKE HOUSE",
+        "City": "Gjoa Haven",
+        "Country": "United States",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "444 plus s.r.o.",
+        "City": "Inglewood",
+        "Country": "Turkey",
+        "Industry": "General Farms",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "48:ANS TAXI",
+        "City": "Sunrise",
+        "Country": "China",
+        "Industry": "Beauty Shops",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "4CE",
+        "City": "Dayton",
+        "Country": "India",
+        "Industry": "Drinking Places",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "EKOSTAVBY s.r.o.",
+        "City": "Providence",
+        "Country": "United States",
+        "Industry": "Heavy Construction",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "ELAN NORGE AS",
+        "City": "Santo Domingo",
+        "Country": "China",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "eMAG SOLUTIONS",
+        "City": "Wilshire Park",
+        "Country": "Japan",
+        "Industry": "Engineering Services",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "EMS-GRIVORY",
+        "City": "Four Corners",
+        "Country": "Spain",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "ENVIROCARE TECHNICAL CONS.",
+        "City": "Bern",
+        "Country": "Canada",
+        "Industry": "General Farms",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "ESPINOSA CASTILLO ARMANDO",
+        "City": "Chisinau",
+        "Country": "France",
+        "Industry": "Beauty Shops",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "ES-RA Vertriebs GmbH",
+        "City": "Honolulu",
+        "Country": "Peru",
+        "Industry": "Drinking Places",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "EXPEDITORS INTL/NEW YORK",
+        "City": "Bishkek",
+        "Country": "England",
+        "Industry": "Heavy Construction",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "FASTEN GROUP IMP. & EXP. CO., LTD.",
+        "City": "Astoria",
+        "Country": "United States",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "FATATI-BTR-SWEDEN AB",
+        "City": "Sawgrass Mills Mal",
+        "Country": "Turkey",
+        "Industry": "Engineering Services",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "FEDEX",
+        "City": "Alofi",
+        "Country": "China",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "FIRST HORIZON INS GRP-TN",
+        "City": "Alta",
+        "Country": "India",
+        "Industry": "General Farms",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "Fong Chen Plastic Technology Ind.",
+        "City": "Back Bay",
+        "Country": "United States",
+        "Industry": "Beauty Shops",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "FURNITURE WORLD",
+        "City": "Port-au-Prince",
+        "Country": "China",
+        "Industry": "Drinking Places",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "G B SERVICES",
+        "City": "Richmond",
+        "Country": "Japan",
+        "Industry": "Heavy Construction",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "GLOBAL OPERATION TEXAS LP",
+        "City": "Renton",
+        "Country": "Spain",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "GOBEL & PARTNER",
+        "City": "New Rochelle",
+        "Country": "Canada",
+        "Industry": "Engineering Services",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "HANTZ BENEFIT SERVICES",
+        "City": "San Bernardino",
+        "Country": "France",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "HELLERMANN TYTON AB",
+        "City": "Tokyo",
+        "Country": "Peru",
+        "Industry": "General Farms",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "HORN TECALEMIT GMBH & CO. KG",
+        "City": "Beaverton",
+        "Country": "England",
+        "Industry": "Beauty Shops",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "HUSQVARNA FLYTT & MÖBEL TRANS.",
+        "City": "Manoa",
+        "Country": "United States",
+        "Industry": "Drinking Places",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "Ing. Jan Mendek",
+        "City": "Gastonia",
+        "Country": "Turkey",
+        "Industry": "Heavy Construction",
+        "Classification": "Headquarters"
+    },
+    {
+        "Name": "INTELECTOOLS B. I. INFORMATICA LTDA",
+        "City": "Jackson",
+        "Country": "China",
+        "Industry": "Accounting, Auditing, and Bookkeeping",
+        "Classification": "Branch"
+    },
+    {
+        "Name": "IPRO AS",
+        "City": "Mesquite",
+        "Country": "India",
+        "Industry": "Engineering Services",
+        "Classification": "Single Location"
+    },
+    {
+        "Name": "PRECIALP",
+        "City": "Richardson",
+        "Country": "United States",
+        "Industry": "New And Used Car Dealers",
+        "Classification": "Headquarters"
+    }
+]
