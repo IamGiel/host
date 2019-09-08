@@ -1,0 +1,105 @@
+// buttons
+.backBtn {
+  outline: none;
+  //   height: 48px;
+  //   width: 114px;
+  //   border: 1px solid #E7E7E7;
+  //   border-radius: 24px;
+  //   background-color: #FFFFFF;
+  height: 48px;
+  width: 114px;
+  border: 1px solid #E7E7E7;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+}
+
+.backBtn:hover {
+  background-color: ghostwhite;
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+
+  moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.backLabelBtn {
+  color: black;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.nextBtn {
+  height: 48px;
+  width: 114px;
+  border-radius: 24px;
+  background: linear-gradient(315deg, #544AD8 0%, #804CD9 100%);
+  background-size: 300% 100%;
+  background-image: linear-gradient(315deg, #544AD8 0%, #804CD9 100%);
+
+  border-radius: 24px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.nextBtn:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.nextBtn:focus {
+  outline: none;
+}
+
+.nextBtn.color-3 {
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.nextLabelBtn {
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.formSignUp {
+  margin-left: 30% !important;
+  margin-right: 30% !important;
+}
+
+// iphone X
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)
+
+/* uncomment for only portrait: */
+/* and (orientation: portrait) */
+/* uncomment for only landscape: */
+/* and (orientation: landscape) */
+  {
+  .formSignup {
+    width: 15em !important;
+  }
+}
+
+ion-list {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+ion-toolbar {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
