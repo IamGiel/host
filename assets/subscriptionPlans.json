@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "name": "Monthly",
+    "price": "99",
+    "payments":"monthly"
+  },
+  {
+    "id": 2,
+    "name": "Quarterly",
+    "price": "267",
+    "payments": "3 months"
+  },
+  {
+    "id": 3,
+    "name": "Annualy",
+    "price": "952",
+    "payments": "1 year"
+  }
+]
