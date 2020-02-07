@@ -1,0 +1,46 @@
+[{
+  "data": {
+    "avatar": null,
+    "nickname": "admin-1",
+    "login": "admin",
+    "companyName": "Aricent",
+    "dateOfBirth": null,
+    "firstName": "Administrator",
+    "lastName": "Administrator",
+    "designation": "administrator",
+    "emailId": "admin@localhost.com",
+    "industryId": 1,
+    "industryName": "Banking and Financials",
+    "otherIndustry": null,
+    "countryId": 231,
+    "jobTitleId": null,
+    "teamSize": null,
+    "countryName": "United States",
+    "callingCode": "+91",
+    "contactNumber": "1234567890",
+    "termsAccepted": true,
+    "hasSubscribed": false,
+    "password": null,
+    "uuid": "cbdeed3a-48fd-11ea-9706-ab2bd6b0ee9b",
+    "piiStatus": false,
+    "autologinCount": null,
+    "privateUser": false
+  },
+  "status": 200,
+  "config": {
+    "method": "GET",
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "url": "api/userProfile?login=admin&cacheBuster=1581091383030",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "X-CSRF-TOKEN": "c0d05f7b-449d-4ccd-8842-da7f68184190"
+    },
+    "cached": false
+  },
+  "statusText": "OK"
+}]
