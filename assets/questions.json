@@ -1,6 +1,5 @@
 {
-    "data": [
-        {
+    "data": [{
             "userId": 141,
             "surveyQuestionid": "1",
             "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
@@ -8,13 +7,16 @@
             "active": "true",
             "sequenceOrder": "1",
             "questionOptions": [{
-                    "a": "answerOne"
+                    "answerText": "answerOne",
+                    "value": "option1"
                 },
                 {
-                    "b": "answerTwo"
+                    "answerText": "answerTwo",
+                    "value": "option2"
                 },
                 {
-                    "a": "answerThree"
+                    "answerText": "answerThree",
+                    "value": "option3"
                 }
             ]
         },
@@ -26,13 +28,16 @@
             "active": "true",
             "sequenceOrder": "2",
             "questionOptions": [{
-                    "a": "answerOne"
+                    "answerText": "answerOne",
+                    "value": "option1"
                 },
                 {
-                    "b": "answerTwo"
+                    "answerText": "answerTwo",
+                    "value": "option2"
                 },
                 {
-                    "a": "answerThree"
+                    "answerText": "answerThree",
+                    "value": "option3"
                 }
             ]
         },
@@ -44,13 +49,16 @@
             "active": "true",
             "sequenceOrder": "3",
             "questionOptions": [{
-                    "a": "answerOne"
+                    "answerText": "answerOne",
+                    "value": "option1"
                 },
                 {
-                    "b": "answerTwo"
+                    "answerText": "answerTwo",
+                    "value": "option2"
                 },
                 {
-                    "a": "answerThree"
+                    "answerText": "answerThree",
+                    "value": "option3"
                 }
             ]
         },
@@ -62,13 +70,16 @@
             "active": "true",
             "sequenceOrder": "4",
             "questionOptions": [{
-                    "a": "answerOne"
+                    "answerText": "answerOne",
+                    "value": "option1"
                 },
                 {
-                    "b": "answerTwo"
+                    "answerText": "answerTwo",
+                    "value": "option2"
                 },
                 {
-                    "a": "answerThree"
+                    "answerText": "answerThree",
+                    "value": "option3"
                 }
             ]
         },
@@ -80,13 +91,16 @@
             "active": "true",
             "sequenceOrder": "5",
             "questionOptions": [{
-                    "a": "answerOne"
+                    "answerText": "answerOne",
+                    "value": "option1"
                 },
                 {
-                    "b": "answerTwo"
+                    "answerText": "answerTwo",
+                    "value": "option2"
                 },
                 {
-                    "a": "answerThree"
+                    "answerText": "answerThree",
+                    "value": "option3"
                 }
             ]
         },
@@ -98,13 +112,16 @@
             "active": "true",
             "sequenceOrder": "6",
             "questionOptions": [{
-                    "a": "answerOne"
+                    "answerText": "answerOne",
+                    "value": "option1"
                 },
                 {
-                    "b": "answerTwo"
+                    "answerText": "answerTwo",
+                    "value": "option2"
                 },
                 {
-                    "a": "answerThree"
+                    "answerText": "answerThree",
+                    "value": "option3"
                 }
             ]
         }
