@@ -1,0 +1,113 @@
+{
+    "data": [
+        {
+            "userId": 141,
+            "surveyQuestionid": "1",
+            "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "questionType": "multiple-choice",
+            "active": "true",
+            "sequenceOrder": "1",
+            "questionOptions": [{
+                    "a": "answerOne"
+                },
+                {
+                    "b": "answerTwo"
+                },
+                {
+                    "a": "answerThree"
+                }
+            ]
+        },
+        {
+            "userId": 142,
+            "surveyQuestionid": "2",
+            "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "questionType": "true-false",
+            "active": "true",
+            "sequenceOrder": "2",
+            "questionOptions": [{
+                    "a": "answerOne"
+                },
+                {
+                    "b": "answerTwo"
+                },
+                {
+                    "a": "answerThree"
+                }
+            ]
+        },
+        {
+            "userId": 143,
+            "surveyQuestionid": "3",
+            "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "questionType": "multi-select",
+            "active": "true",
+            "sequenceOrder": "3",
+            "questionOptions": [{
+                    "a": "answerOne"
+                },
+                {
+                    "b": "answerTwo"
+                },
+                {
+                    "a": "answerThree"
+                }
+            ]
+        },
+        {
+            "userId": 144,
+            "surveyQuestionid": "4",
+            "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "questionType": "short-answer",
+            "active": "true",
+            "sequenceOrder": "4",
+            "questionOptions": [{
+                    "a": "answerOne"
+                },
+                {
+                    "b": "answerTwo"
+                },
+                {
+                    "a": "answerThree"
+                }
+            ]
+        },
+        {
+            "userId": 145,
+            "surveyQuestionid": "5",
+            "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "questionType": "multiple-choice",
+            "active": "true",
+            "sequenceOrder": "5",
+            "questionOptions": [{
+                    "a": "answerOne"
+                },
+                {
+                    "b": "answerTwo"
+                },
+                {
+                    "a": "answerThree"
+                }
+            ]
+        },
+        {
+            "userId": 146,
+            "surveyQuestionid": "6",
+            "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "questionType": "multiple-choice",
+            "active": "true",
+            "sequenceOrder": "6",
+            "questionOptions": [{
+                    "a": "answerOne"
+                },
+                {
+                    "b": "answerTwo"
+                },
+                {
+                    "a": "answerThree"
+                }
+            ]
+        }
+    ],
+    "totalSurveyQuestions": "6"
+}
