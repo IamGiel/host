@@ -44,21 +44,30 @@
         {
             "userId": 143,
             "surveyQuestionid": "3",
-            "questionText": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "questionText": "Select cars you had in the past?",
             "questionType": "multi-select",
             "active": "true",
             "sequenceOrder": 3,
             "questionOptions": [{
-                    "answerText": "answerOne",
+                    "answerText": "honda",
                     "value": "option1"
                 },
                 {
-                    "answerText": "answerTwo",
+                    "answerText": "bmw",
                     "value": "option2"
                 },
                 {
-                    "answerText": "answerThree",
+                    "answerText": "toyota",
                     "value": "option3"
+                }, {
+                    "answerText": "nissan",
+                    "value": "option4"
+                }, {
+                    "answerText": "porsche",
+                    "value": "option5"
+                }, {
+                    "answerText": "mazda",
+                    "value": "option6"
                 }
             ]
         },
