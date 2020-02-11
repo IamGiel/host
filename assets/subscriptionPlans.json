@@ -2,21 +2,21 @@
     "id": 1,
     "plan_name": "Monthly",
     "price": "99",
-    "duration_text ":"monthly",
+    "duration_text":"monthly",
     "discount_percentage":""
   },
   {
     "id": 2,
     "plan_name": "Quarterly",
     "price": "267",
-    "duration_text ": "3 months",
+    "duration_text": "3 months",
     "discount_percentage":"10"
   },
   {
     "id": 3,
     "plan_name": "Annualy",
     "price": "952",
-    "duration_text ": "1 year",
+    "duration_text": "1 year",
     "discount_percentage":"20"
   }
 ]
