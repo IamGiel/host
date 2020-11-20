@@ -148,6 +148,10 @@ button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-but
     -ms-flex-align: center;
     align-items: center;
 }
+.rwc-embed__thumb {
+    width: 80px!important;
+    height: 80px!important;
+}
 body * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
