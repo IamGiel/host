@@ -79,6 +79,17 @@ button.ui-button.ui-button--type-primary.ui-button--color-default[data-v-2d18784
     text-decoration: underline;
 }
 
+.buttons-list button.ui-button.ui-button--type-secondary.ui-button--color-primary {
+    border-color: white!important;
+    border-radius: 4px;
+    color: white!important;
+    -webkit-transition: color .4s,background-color .4s;
+    transition: color .4s,background-color .4s;
+    margin-bottom: 8px;
+    height: auto;
+    min-height: 32px;
+}
+
 .rwc-embed__thumb {
     width: 64px;
     height: 64px;
