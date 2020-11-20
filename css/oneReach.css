@@ -4,7 +4,7 @@
 
 .message-bubble__text {
     word-break: break-word;
-    color: white!important;
+    color: black!important;
     font-family: Inter!important;
 }
 
