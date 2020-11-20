@@ -18,6 +18,28 @@
     /* color: var(--textColorInvert); */
     border-radius: 8px 8px 0 8px;
 }
+
+.buttons-list button.ui-button.ui-button--type-secondary.ui-button--color-primary /deep/ .ui-button__content {
+    max-width: 100%;
+    word-break: break-all;
+    font-size: 12px;
+}
+
+.buttons-list button.ui-button.ui-button--type-secondary.ui-button--color-primary {
+    border-color: white;
+    border-radius: 4px;
+    color: white;
+    -webkit-transition: color .4s,background-color .4s;
+    transition: color .4s,background-color .4s;
+    margin-bottom: 8px;
+    height: auto;
+    min-height: 32px;
+}
+
+button.ui-button .ui-ripple-ink {
+    border-radius: 0;
+    background-color: rgb(104,71,206, 0.4);
+}
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
