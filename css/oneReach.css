@@ -117,17 +117,6 @@ button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-but
     transition: transform .4s,opacity .4s,visibility .4s,-webkit-transform .4s;
 }
 
-.rwc-embed--anim-pulse:after, .rwc-embed--anim-pulse:before {
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 1px solid rebeccapurple;
-    content: "";
-}
-
 .rwc-embed__thumb img {
     max-width: 48%!important;
     max-height: 48%!important;
@@ -160,6 +149,17 @@ body * {
 
 .spanLabel {
     font-weight: 700;
+}
+
+.rwc-embed--anim-pulse:after, .rwc-embed--anim-pulse:before {
+    position: absolute!important;
+    top: -1px!important;
+    left: -1px!important;
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 50%!important;
+    border: 1px solid rebeccapurple!important;
+    content: ""!important;
 }
 
 /* #app {
