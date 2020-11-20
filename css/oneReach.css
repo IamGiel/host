@@ -158,6 +158,10 @@ body * {
     font-size: 12px;
 }
 
+.spanLabel {
+    font-weight: 700;
+}
+
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
