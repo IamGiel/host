@@ -148,6 +148,11 @@ button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-but
     -ms-flex-align: center;
     align-items: center;
 }
+body * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+}
 
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
