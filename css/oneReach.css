@@ -40,6 +40,12 @@ button.ui-button .ui-ripple-ink {
     border-radius: 0;
     background-color: rgb(104,71,206, 0.4);
 }
+
+.dApi {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
