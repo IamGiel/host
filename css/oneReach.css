@@ -36,6 +36,29 @@
     min-height: 32px;
 }
 
+.message-wrapper__conversation-buttons button.ui-button.ui-button--type-primary.ui-button--color-default:first-child /deep/ .ui-button__content, .message-wrapper__conversation-buttons button.ui-button.ui-button--type-primary.ui-button--color-primary:first-child /deep/ .ui-button__content {
+    max-width: 100%;
+    word-break: break-all;
+    font-size: 12px;
+    color: white;
+}
+.ui-button__content {
+    color: white!important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    z-index: 1;
+}
+
 button.ui-button .ui-ripple-ink {
     border-radius: 0;
     background-color: rgb(104,71,206, 0.4);
