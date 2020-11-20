@@ -13,7 +13,7 @@
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
 } */
 
-.message-wrapper .message-wrapper--left .message-wrapper-- .message-bubble {
+.message-wrapper .message-wrapper--left .message-wrapper-- > .message-bubble {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
 }
 .message-bubble--blue {
