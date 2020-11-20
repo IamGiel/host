@@ -133,6 +133,22 @@ button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-but
     max-height: 48%!important;
 }
 
+.rwc-embed__thumb-wrapper {
+    width: 31px;
+    height: 64px;
+    max-width: 100%;
+    max-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
