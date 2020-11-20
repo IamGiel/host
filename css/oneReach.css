@@ -76,6 +76,13 @@ button.ui-button.ui-button--type-primary.ui-button--color-default[data-v-2d18784
     text-decoration: underline;
 }
 
+.rwc-embed__thumb {
+    width: 64px;
+    height: 64px;
+    background-color: transparent!important;
+
+}
+
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
