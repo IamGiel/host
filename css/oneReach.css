@@ -11,6 +11,12 @@
 .card-gel {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
 }
+
+.message-bubble--blue {
+    background-color: lightgrey;
+    /* color: var(--textColorInvert); */
+    border-radius: 8px 8px 0 8px;
+}
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
