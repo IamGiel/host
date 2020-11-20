@@ -93,7 +93,7 @@ button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-but
 .rwc-embed__thumb {
     width: 64px;
     height: 64px;
-    background-color: transparent;
+    background-color: rgb(104,71,206, 0.4)!important;
     border: none;
     border-radius: 50%;
     color: #fff;
