@@ -1,11 +1,15 @@
 .message-bubble {
-    background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
+    /* background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);  */
 }
 
 .message-bubble__text {
     word-break: break-word;
     color: white!important;
     font-family: Inter!important;
+}
+
+.card-gel {
+    background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
 }
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
