@@ -9,10 +9,13 @@
     font-size: 12px;
 }
 
-.card-gel {
+/* .card-gel {
+    background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
+} */
+
+.message-wrapper .message-wrapper--left .message-wrapper-- .message-bubble {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
 }
-
 .message-bubble--blue {
     background-color: lightgrey;
     /* color: var(--textColorInvert); */
