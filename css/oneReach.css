@@ -128,6 +128,11 @@ button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-but
     content: "";
 }
 
+.rwc-embed__thumb img {
+    max-width: 48%!important;
+    max-height: 48%!important;
+}
+
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
