@@ -16,6 +16,13 @@
 .message-wrapper--left .message-bubble {
     background: linear-gradient(90deg, rgba(140,45,232,1) 0%, rgba(130,40,194,1) 35%)!important;
 }
+
+.message-wrapper--right  .message-bubble__text {
+    word-break: break-word;
+    color: black!important;
+    font-family: Inter!important;
+    font-size: 12px;
+}
 .message-bubble--blue {
     background-color: lightgrey;
     /* color: var(--textColorInvert); */
