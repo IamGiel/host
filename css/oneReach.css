@@ -13,8 +13,8 @@
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
 } */
 
-.message-wrapper .message-wrapper--left .message-wrapper-- > .message-bubble {
-    background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%);
+.message-wrapper--left .message-bubble {
+    background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%)!important;
 }
 .message-bubble--blue {
     background-color: lightgrey;
