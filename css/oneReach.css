@@ -56,6 +56,10 @@
     border-radius: 8px 8px 0 8px;
 }
 
+.message-time__sent {
+    color: rebeccapurple;
+}
+
 .buttons-list button.ui-button.ui-button--type-secondary.ui-button--color-primary /deep/ .ui-button__content {
     max-width: 100%;
     word-break: break-all;
