@@ -16,7 +16,7 @@
 .message-wrapper--left .message-bubble {
     background: linear-gradient(90deg, rgba(140,45,232,1) 0%, rgba(130,40,194,1) 35%)!important;
 }
-.ui-ripple-ink:hover {
+.ui-ripple-ink:hover, .ui-ripple-ink:active {
     background-color: #DCDAE5!important;
 }
 
