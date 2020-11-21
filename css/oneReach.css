@@ -64,7 +64,7 @@
 
 button.ui-button .ui-ripple-ink {
     border-radius: 0;
-    background-color: rgb(104,71,206, 0.4);
+    background-color: rgb(104,71,206, 0.2);
 }
 button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-button.ui-button--type-primary.ui-button--color-primary {
     min-height: 44px;
