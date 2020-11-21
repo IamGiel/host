@@ -31,6 +31,19 @@
     justify-content: center;
 }
 
+.message-wrapper__new-conversation button.ui-button.ui-button--type-primary.ui-button--color-default, .message-wrapper__new-conversation button.ui-button.ui-button--type-primary.ui-button--color-primary {
+    margin-right: 8px;
+    max-width: 100%;
+    min-height: 34px;
+    border: 1px solid white!important;
+    border-radius: 4px;
+    color: red;
+    background-color: transparent;
+    -webkit-transition: color .4s,background-color .4s;
+    transition: color .4s,background-color .4s;
+    height: auto;
+}
+
 .message-wrapper--right  .message-bubble__text {
     word-break: break-word;
     color: black!important;
