@@ -207,7 +207,14 @@ body * {
 h1.title > span {
     text-align: center!important;
     margin: 0px;
-    font-size: 24px;
+    font-size: 22px;
+}
+
+.msgContainer {
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 1px 0px 4px 2px #ccc;
+    color: black;
 }
 
 /* #app {
