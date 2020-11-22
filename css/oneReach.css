@@ -204,6 +204,12 @@ body * {
     content: ""!important;
 }
 
+h1.title > span {
+    text-align: center!important;
+    margin: 0px;
+    font-size: 24px;
+}
+
 /* #app {
     background: linear-gradient(135deg, #804cd9 0%, #544ad8 100%); 
 } */
