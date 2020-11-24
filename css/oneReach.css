@@ -217,6 +217,10 @@ h1.title > span {
     color: black;
 }
 
+.gotIt {
+    color: white!important;
+}
+
 /* loader */
 .lds-ellipsis {
     display: inline-block;
