@@ -221,6 +221,14 @@ h1.title > span {
     color: white!important;
 }
 
+.chat-input{
+    max-width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white!important;
+}
+
 /* loader */
 .lds-ellipsis {
     display: inline-block;
