@@ -14,7 +14,7 @@
 } */
 
 .message-wrapper--left .message-bubble {
-    background: #6B4CD9;
+    background: #6B4CD9!important;
 }
 .ui-ripple-ink:hover, .ui-ripple-ink:active {
     background-color: #DCDAE5!important;
