@@ -51,7 +51,7 @@
     word-break: break-word;
     color: black!important;
     font-family: Inter!important;
-    font-size: 12px;
+    font-size: 14px!important;
 }
 .message-bubble--blue {
     background-color: lightgrey;
