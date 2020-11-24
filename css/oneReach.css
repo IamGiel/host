@@ -186,7 +186,7 @@ button.ui-button.ui-button--type-primary.ui-button--color-default, button.ui-but
 body * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .spanLabel {
