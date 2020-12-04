@@ -267,6 +267,15 @@ h1.title > span {
     box-shadow: 3px 3px 5px 6px #ccc;
 }
 
+/* blob container shape */
+#app.shown {
+    opacity: 1;
+    visibility: visible;
+    /* background: white; */
+    border: 1px solid rebeccapurple;
+    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+}
+
 /* loader */
 .lds-ellipsis {
     display: inline-block;
