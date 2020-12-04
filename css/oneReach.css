@@ -271,9 +271,9 @@ h1.title > span {
 #app.shown {
     opacity: 1;
     visibility: visible;
-    /* background: white; */
-    border: 1px solid rebeccapurple;
-    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+    background: white;
+    /* border: 1px solid rebeccapurple; */
+    /* border-radius: 60px 45px 30px 15px/15px 30px 45px 60px; */
 }
 
 /* loader */
