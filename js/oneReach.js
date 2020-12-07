@@ -1,8 +1,8 @@
-
-setTimeout(()=>{
-    alert("testing here");
+setTimeout(function(){
+    alert(1);
+    
     anychart.onDocumentReady(function() {
- 
+     
         // set the data
         var data = {
             header: ["Name", "Death toll"],
@@ -27,7 +27,8 @@ setTimeout(()=>{
     
         // draw
         chart.container("container");
-        chart.draw();    
+        chart.draw();
+        alert(2)
+       
       });
-},3000)
-
+    },2000)
