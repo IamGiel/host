@@ -229,6 +229,31 @@ h1.title > span {
     color: white!important;
 }
 
+.rwc-button {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 9px 10px;
+    outline: none;
+    border: 1px solid var(--rwcTheme);
+    border-radius: 4px;
+    font-family: SFProText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    cursor: pointer;
+    height: 20px!important;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    font-size: 14px;
+    line-height: 8px!important;
+}
+
 .rwc-file__icon {
     width: 35px!important;
     height: 35px!important;
