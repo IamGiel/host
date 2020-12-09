@@ -229,6 +229,13 @@ h1.title > span {
     color: white!important;
 }
 
+#garrensChart {
+    width: 100%;
+    height: 374px;
+    padding: 12px 0px;
+    border: solid 1px rebeccapurple;
+}
+
 .rwc-button {
     position: relative;
     display: -webkit-inline-box;
