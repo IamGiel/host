@@ -316,6 +316,14 @@ h1.title > span {
     white-space: nowrap;
 }
 
+#table2{
+    transform: translateX(0);
+  transition: 1s;
+}
+#table2:hover{
+    transform: translateX(calc(200px - 100%));
+}
+
 /* loader */
 .lds-ellipsis {
     display: inline-block;
