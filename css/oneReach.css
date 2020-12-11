@@ -310,7 +310,10 @@ h1.title > span {
 
 
 .message-wrapper.message-wrapper--left.message-wrapper--custom {
+    /* overflow-x: scroll!important; */
     overflow-x: scroll!important;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 /* loader */
