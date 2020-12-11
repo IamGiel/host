@@ -229,6 +229,10 @@ h1.title > span {
     color: white!important;
 }
 
+.message-wrapper .message-wrapper--left .message-wrapper--custom {
+    overflow-x: scroll!important;
+}
+
 #garrensChart {
     width: 100%;
     height: 374px;
