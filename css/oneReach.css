@@ -316,6 +316,10 @@ h1.title > span {
     white-space: nowrap;
 }
 
+.message-wrapper.message-wrapper--left.message-wrapper--rwc-buttons-list {
+    display: flex;
+}
+
 .message-wrapper {
     max-width: 100%!important;
 }
