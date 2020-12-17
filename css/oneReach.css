@@ -324,6 +324,15 @@ h1.title > span {
     max-width: 100%!important;
 }
 
+.buttons-list button.rwc-button span {
+    display: inline-block;
+    max-width: 100%;
+    height: auto!important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 #table2{
     transform: translateX(0);
   transition: 1s;
