@@ -62,7 +62,7 @@
 //     console.log("this is latitude: ", lat)
 //     console.log("this is longitude: ", long)
 
-    
+
 //   })
 // };
 
@@ -87,15 +87,15 @@ $.ajax(settings).done(function (response) {
 // convert UC/UNIX time stamp to day of the week
 var timestamp = 1608256800; // UNIX timestamp in seconds
 var dt = new Date();
-dt.setTime(timestamp*1000); // javascript timestamps are in milliseconds
+dt.setTime(timestamp * 1000); // javascript timestamps are in milliseconds
 document.write(dt);
 
 let ts = 1549312452;
-let time = (new Date(ts*1000)+'').slice(16,24);
-let time2 = (new Date(ts*1000)+'').slice(0, 15);
+let time = (new Date(ts * 1000) + '').slice(16, 24);
+let time2 = (new Date(ts * 1000) + '').slice(0, 15);
 
-console.log("time >>>>>>> ",time);
-console.log("time2 >>>>>>> ",time2);
+console.log("time >>>>>>> ", time);
+console.log("time2 >>>>>>> ", time2);
 // document.write(dt.getDay());
 
 
@@ -147,3 +147,28 @@ console.log("time2 >>>>>>> ",time2);
 //       alert("error");
 //     });
 // });
+
+// ===== How to check if a string contains text from an array of substrings in JavaScript?
+
+const substrings = ["weather", "buy", "sell", "price"]; 
+// await this.mergeFields['storeHumor'].get({path: 'userMsg'})
+let x = "await this.mergeFields['storeHumor'].get({path: 'userMsg'})";
+let str = `this is x: ${x}`;
+let val;
+
+
+
+const checker = (st) => {
+
+  if (substrings.some(v => st.includes(v))) {
+    val = true;
+  } else {
+    val = false;
+  }
+  // console.log(val)
+  return val;
+};
+
+return checker(str);
+
+console.log(checker(str));
