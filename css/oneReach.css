@@ -315,6 +315,20 @@ h1.title > span {
     display: flow-root!important;
     flex-wrap: wrap!important;
 }
+.location__controls {
+    position: absolute!important;
+    bottom: 0!important;
+    right: 0!important;
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: block!important;
+    -webkit-box-orient: vertical!important;
+    -webkit-box-direction: normal!important;
+    -ms-flex-direction: column!important;
+    flex-direction: column!important;
+    padding-right: 32px!important;
+    padding-bottom: 32px!important;
+}
 
 #dTable {
     width: 300px;
