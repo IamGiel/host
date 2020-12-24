@@ -283,6 +283,15 @@ button.location__btn.rwc-button.rwc-button--filled.rwc-button--primary.rwc-butto
     width: 92%!important;
     margin: 12px 12px!important;
 }
+@media (max-width: 767.98px) {
+    .location__controls .ui-icon-button--type-primary.ui-icon-button--color-default {
+        width: 48px!important;
+        height: 48px;
+        border-radius: 50%;
+        font-size: 24px;
+    }
+}
+
 
 .rwc-file__icon {
     width: 35px!important;
