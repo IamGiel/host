@@ -51,51 +51,53 @@
 // let latText = document.getElementById("latitude");
 // let longText = document.getElementById("longitude");
 
-// function getLocation() {
-//   navigator.geolocation.getCurrentPosition(function (position) {
-//     let lat = position.coords.latitude;
-//     let long = position.coords.longitude;
+function getLocation() {
+  navigator.geolocation.getCurrentPosition(function (position) {
 
-//     latText.innerText = lat.toFixed(2);
-//     longText.innerText = long.toFixed(2);
+    console.log(position)
+    let lat = position.coords.latitude;
+    let long = position.coords.longitude;
 
-//     console.log("this is latitude: ", lat)
-//     console.log("this is longitude: ", long)
+    // latText.innerText = lat.toFixed(2);
+    // longText.innerText = long.toFixed(2);
 
-
-//   })
-// };
+    console.log("this is latitude: ", lat)
+    console.log("this is longitude: ", long)
 
 
-// getLocation();
-
-
-
-var settings = {
-  "url": "http://api.openweathermap.org/data/2.5/weather?lat=90&lon=34&appid=f57ea824e89edda25200ba98c9cf0c82",
-  "method": "GET",
-  "timeout": 0,
+  })
 };
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
-  console.log(response.weather[0].description);
-  console.log(response.main.feels_like);
-});
+
+getLocation();
 
 
-// convert UC/UNIX time stamp to day of the week
-var timestamp = 1608256800; // UNIX timestamp in seconds
-var dt = new Date();
-dt.setTime(timestamp * 1000); // javascript timestamps are in milliseconds
-document.write(dt);
 
-let ts = 1549312452;
-let time = (new Date(ts * 1000) + '').slice(16, 24);
-let time2 = (new Date(ts * 1000) + '').slice(0, 15);
+// var settings = {
+//   "url": "http://api.openweathermap.org/data/2.5/weather?lat=90&lon=34&appid=f57ea824e89edda25200ba98c9cf0c82",
+//   "method": "GET",
+//   "timeout": 0,
+// };
 
-console.log("time >>>>>>> ", time);
-console.log("time2 >>>>>>> ", time2);
+// $.ajax(settings).done(function (response) {
+//   console.log(response);
+//   console.log(response.weather[0].description);
+//   console.log(response.main.feels_like);
+// });
+
+
+// // convert UC/UNIX time stamp to day of the week
+// var timestamp = 1608256800; // UNIX timestamp in seconds
+// var dt = new Date();
+// dt.setTime(timestamp * 1000); // javascript timestamps are in milliseconds
+// document.write(dt);
+
+// let ts = 1549312452;
+// let time = (new Date(ts * 1000) + '').slice(16, 24);
+// let time2 = (new Date(ts * 1000) + '').slice(0, 15);
+
+// console.log("time >>>>>>> ", time);
+// console.log("time2 >>>>>>> ", time2);
 // document.write(dt.getDay());
 
 
@@ -150,25 +152,25 @@ console.log("time2 >>>>>>> ", time2);
 
 // ===== How to check if a string contains text from an array of substrings in JavaScript?
 
-const substrings = ["weather", "buy", "sell", "price"]; 
-// await this.mergeFields['storeHumor'].get({path: 'userMsg'})
-let x = "await this.mergeFields['storeHumor'].get({path: 'userMsg'})";
-let str = `this is x: ${x}`;
-let val;
+// const substrings = ["weather", "buy", "sell", "price"]; 
+// // await this.mergeFields['storeHumor'].get({path: 'userMsg'})
+// let x = "await this.mergeFields['storeHumor'].get({path: 'userMsg'})";
+// let str = `this is x: ${x}`;
+// let val;
 
 
 
-const checker = (st) => {
+// const checker = (st) => {
 
-  if (substrings.some(v => st.includes(v))) {
-    val = true;
-  } else {
-    val = false;
-  }
-  // console.log(val)
-  return val;
-};
+//   if (substrings.some(v => st.includes(v))) {
+//     val = true;
+//   } else {
+//     val = false;
+//   }
+//   // console.log(val)
+//   return val;
+// };
 
-return checker(str);
+// return checker(str);
 
-console.log(checker(str));
+// console.log(checker(str));

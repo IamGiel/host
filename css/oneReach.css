@@ -85,6 +85,7 @@
     word-break: break-all;
     font-size: 12px;
     color: white;
+    display: inline-flex!important;
 }
 .ui-button__content {
     color: rebeccapurple!important;
