@@ -309,6 +309,13 @@ h1.title > span {
     color: white!important;
 }
 
+.buttons-list {
+    width: 100%!important;
+    margin-top: 8px!important;
+    display: flow-root!important;
+    flex-wrap: wrap!important;
+}
+
 #dTable {
     width: 300px;
     box-shadow: 0 0 black;
