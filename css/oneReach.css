@@ -87,6 +87,19 @@
     color: white;
     display: inline-flex!important;
 }
+
+.message-wrapper__conversation-buttons {
+    margin-top: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-flex!important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
 .ui-button__content {
     color: rebeccapurple!important;
     font-weight: 700;
