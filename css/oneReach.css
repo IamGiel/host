@@ -100,6 +100,10 @@
     -ms-flex-align: start;
     align-items: flex-start;
 }
+button {
+    width: calc(56% - 5px)!important;
+    margin-top: 4px;
+}
 .ui-button__content {
     color: rebeccapurple!important;
     font-weight: 700;
