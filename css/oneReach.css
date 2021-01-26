@@ -24,14 +24,13 @@
     color: white!important;
 }
 .buttons-list {
-    width: 100%;
-    margin-top: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: auto!important;
+    margin-top: 8px!important;
+    display: contents!important;
+    display: -ms-flexbox!important;
+    /* display: flex!important; */
+    -ms-flex-wrap: wrap!important;
+    flex-wrap: wrap!important;
 }
 
 .message-wrapper__new-conversation button.ui-button.ui-button--type-primary.ui-button--color-default, .message-wrapper__new-conversation button.ui-button.ui-button--type-primary.ui-button--color-primary {
@@ -244,7 +243,6 @@ h1.title > span {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: white!important;
 }
 
 #garrensChart {
@@ -255,28 +253,20 @@ h1.title > span {
 }
 
 .rwc-button {
-    position: relative;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    max-width: 100%;
-    padding: 15px 10px;
-    outline: none;
-    border: 1px solid var(--rwcTheme);
-    border-radius: 4px;
-    font-family: SFProText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    cursor: pointer;
-    height: 20px!important;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
-    font-size: 14px;
-    line-height: 17px!important;
+    position: relative!important;
+    display: inline-flex!important;
+    -webkit-box-pack: center!important;
+    justify-content: center!important;
+    -webkit-box-align: center!important;
+    align-items: center!important;
+    max-width: 100%!important;
+    outline: none!important;
+    border: 1px solid var(--rwcTheme)!important;
+    border-radius: 4px!important;
+    font-family: SFProText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+    cursor: pointer!important;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1)!important;
+    font-size: 14px!important;
 }
 
 button.location__btn.rwc-button.rwc-button--filled.rwc-button--primary.rwc-button--nowrap {
