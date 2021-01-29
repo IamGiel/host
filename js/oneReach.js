@@ -2,6 +2,158 @@
 
 // =============== ONE REACH API ===========
 
+fetch('https://sdkapi.staging.api.onereach.ai/http/19aa45de-1834-419f-95de-95536f3b9940/sub/http/v1/supplier-lists', {
+    method: 'get',
+    headers: {
+      'content-type': 'application/json',
+      'Authorization': 'Bearer 9d0a1468b95930e0ecc16a586ca395479edf22e133cb6a452a1c0dc3e3a59110f5d8eb78334c66339223302fccbae38d9ecf859c5a3f1fdfeef0f2d32223de37'
+    },
+    // body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(data => {
+    data.items.forEach(e => {
+      console.log(e._source.supplier_name)
+    });
+  });
+
+let sampleData = [{
+  "id": "1",
+  "supplier_name": "Tesla"
+}, {
+  "id": "2",
+  "supplier_name": "Lithium Americas"
+}, {
+  "id": "3",
+  "supplier_name": "Raytheon"
+}];
+
+let ent = {
+  "entities": {
+    "geographyV2": [
+      {
+        "value": "tesla",
+        "type": "poi"
+      }
+    ],
+    "keyPhrase": [
+      "tesla"
+    ],
+    "SupplierNameEntity": [
+      [
+        "tesla"
+      ]
+    ],
+    "FinRiskEntity": [
+      "financially"
+    ],
+    "$instance": {
+      "geographyV2": [
+        {
+          "type": "builtin.geographyV2.poi",
+          "text": "tesla",
+          "startIndex": 3,
+          "length": 5,
+          "modelTypeId": 2,
+          "modelType": "Prebuilt Entity Extractor",
+          "recognitionSources": [
+            "model"
+          ]
+        }
+      ],
+      "keyPhrase": [
+        {
+          "type": "builtin.keyPhrase",
+          "text": "tesla",
+          "startIndex": 3,
+          "length": 5,
+          "modelTypeId": 2,
+          "modelType": "Prebuilt Entity Extractor",
+          "recognitionSources": [
+            "model"
+          ]
+        }
+      ],
+      "SupplierNameEntity": [
+        {
+          "type": "SupplierNameEntity",
+          "text": "tesla",
+          "startIndex": 3,
+          "length": 5,
+          "modelTypeId": 5,
+          "modelType": "List Entity Extractor",
+          "recognitionSources": [
+            "model"
+          ]
+        }
+      ],
+      "FinRiskEntity": [
+        {
+          "type": "FinRiskEntity",
+          "text": "financially",
+          "startIndex": 9,
+          "length": 11,
+          "score": 0.909937441,
+          "modelTypeId": 1,
+          "modelType": "Entity Extractor",
+          "recognitionSources": [
+            "model"
+          ]
+        }
+      ]
+    }
+  }
+}
+
+
+// let res = Object.entries(sampleData).map(([value, label]) => ({value, ...label}));
+
+// console.log(res);
+
+let tempArray = Object.keys(ent['entities']).map((item, key) => {
+  return {
+
+    index: key,
+    type: item,
+    keyPhrase: ent['entities'][item][0]
+    // "label": ent['entities'][item] // etc, a structure what you want
+  };
+})
+
+console.log(ent['entities'].hasOwnProperty('FinRiskEntityasd'));
+
+let ress = tempArray.map(a => a.value);
+console.log(ress)
+
+// let tempArray = Object.keys(ent['entities']).map((item, key) => {
+//   return {
+//       "value": item,
+//       "label": ent['entities'][item] // etc, a structure what you want
+//   };
+// })
+
+console.log(tempArray);
+
+// var transformed = sampleData.map(function (obj) {
+//   var result = {
+//     key: obj.key,
+//     values: []
+//   }
+
+//   for (var key in obj) {
+//     if (obj.hasOwnProperty(key) && key !== "id") {
+//       result.values.push([key, obj[key]]);
+//     }
+//   }
+//   return result;
+// });
+
+console.log(transformed);
+
+
+
+
+
 // fetch('https://sdkapi.staging.api.onereach.ai/http/19aa45de-1834-419f-95de-95536f3b9940/sub/http/v1/component-data', {
 //     method: 'GET', // or 'PUT'
 //     headers: {
