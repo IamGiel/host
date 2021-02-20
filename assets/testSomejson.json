@@ -1,0 +1,454 @@
+{
+    "apiAccount": {
+        "email": "suneel.pasupulati@beroe-inc.com",
+        "userOnboardingCompleted": true,
+        "industry": null,
+        "country": {
+            "name": "United States",
+            "uuid": "530e0344-ea7f-11ea-acc0-0a730e7eabfe",
+            "iso2Code": null
+        },
+        "company": {
+            "name": "Beroe Inc",
+            "uuid": "c0a6b8fb-1292-4ffb-b327-a90638836dfb"
+        },
+        "jobTitle": {
+            "name": "Category Manager / Strategic Sourcing Manager",
+            "uuid": "602fd915-ea7d-11ea-acc0-0a730e7eabfe"
+        },
+        "fullName": "Suneel Pasupulati",
+        "contactNumber": null,
+        "firstName": "Suneel",
+        "lastName": "Pasupulati"
+    },
+    "apiCategory": {
+        "userCategories": {
+            "content": [{
+                "name": "Beverage Cans",
+                "uuid": "756ac9be-ea7f-11ea-acc0-0a730e7eabfe",
+                "categoryMappingUuid": "6b28f0b1631345309b658b3c0c719db2"
+            }, {
+                "name": "Aerosol Cans",
+                "uuid": "756ac9c4-ea7f-11ea-acc0-0a730e7eabfe",
+                "categoryMappingUuid": "e5042034ff1b4e2886012754c0b8581d"
+            }],
+            "pageable": {
+                "sort": {
+                    "unsorted": true,
+                    "sorted": false,
+                    "empty": true
+                },
+                "pageNumber": 0,
+                "pageSize": 25,
+                "offset": 0,
+                "unpaged": false,
+                "paged": true
+            },
+            "totalElements": 2,
+            "last": true,
+            "totalPages": 1,
+            "first": true,
+            "sort": {
+                "unsorted": true,
+                "sorted": false,
+                "empty": true
+            },
+            "numberOfElements": 2,
+            "size": 25,
+            "number": 0,
+            "empty": false
+        },
+        "message": "Categories found"
+    },
+    "apiSupplier": {
+        "data": [{
+            "id": 11,
+            "requestUUID": "349f31aba6c64fe69fd0e5d217277145",
+            "supplierName": "PEPSICO, INC.",
+            "providerKey": {
+                "DUNSNUMBER": "001287762",
+                "ID": "SG-X-199001029D"
+            },
+            "userCompanyUUID": "c0a6b8fb-1292-4ffb-b327-a90638836dfb",
+            "requestCount": null,
+            "status": "ACTIVE",
+            "lastUpdatedDate": "2021-01-30T01:00:12.000+0000",
+            "supplierState": "New York",
+            "supplierCountry": "USA",
+            "requestedDate": "2020-09-20T14:28:39.000+0000",
+            "categoryName": "Aluminum",
+            "spend": "50000.0",
+            "userSupplierMappingUuid": "76ac35c4184c462e8e186efc89004a91",
+            "disruptionStatus": null,
+            "riskStatus": "NOT_AVAILABLE",
+            "ratingResponse": [{
+                "rating-type": "DowJonesTotalAMECount",
+                "value-text": null,
+                "rating": "dj.totalAmeCount",
+                "value-numeric": "92"
+            }, {
+                "rating-type": "Regulatory",
+                "value-text": null,
+                "rating": "dj.regulatory",
+                "value-numeric": "20"
+            }, {
+                "rating-type": "Environmental",
+                "value-text": null,
+                "rating": "dj.environmental",
+                "value-numeric": "57"
+            }, {
+                "rating-type": "Labor",
+                "value-text": null,
+                "rating": "dj.social",
+                "value-numeric": "15"
+            }, {
+                "rating-type": "Regulatory",
+                "value-text": null,
+                "rating": "dj.sanctions",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Financial",
+                "value-text": null,
+                "rating": "dnb.ser",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": "NOT_AVAILABLE",
+                "rating": "financial.risk",
+                "value-numeric": null
+            }],
+            "categoryUUID": "756ac8f0-ea7f-11ea-acc0-0a730e7eabfe",
+            "userSubscriptionDetialsId": 20
+        }, {
+            "id": 278,
+            "requestUUID": "f982a27ad3d74203a0274f386f51d3b6",
+            "supplierName": "CISCO SYSTEMS",
+            "providerKey": null,
+            "userCompanyUUID": "c0a6b8fb-1292-4ffb-b327-a90638836dfb",
+            "requestCount": null,
+            "status": "ACTIVE",
+            "lastUpdatedDate": "2021-01-19T03:16:31.000+0000",
+            "supplierState": null,
+            "supplierCountry": null,
+            "requestedDate": null,
+            "categoryName": "Big Data Solutions",
+            "spend": "123333.0",
+            "userSupplierMappingUuid": "8bd72b4daf774a19b336f1644834a0b0",
+            "disruptionStatus": null,
+            "riskStatus": "LOW",
+            "ratingResponse": [{
+                "rating-type": "Financial",
+                "value-text": null,
+                "rating": "dnb.ser",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": "NOT_AVAILABLE",
+                "rating": "financial.risk",
+                "value-numeric": null
+            }, {
+                "rating-type": "DowJonesTotalAMECount",
+                "value-text": null,
+                "rating": "dj.totalAmeCount",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Regulatory",
+                "value-text": null,
+                "rating": "dj.regulatory",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Environmental",
+                "value-text": null,
+                "rating": "dj.environmental",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Labor",
+                "value-text": null,
+                "rating": "dj.social",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Regulatory",
+                "value-text": null,
+                "rating": "dj.sanctions",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "DowJonesTotalAMECount",
+                "value-text": null,
+                "rating": "dj.totalAmeCount",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Financial",
+                "value-text": "LOW",
+                "rating": "financial.risk",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": "B",
+                "rating": "creditSafe.commonRating",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": null,
+                "rating": "creditSafe.providerRating",
+                "value-numeric": "73"
+            }],
+            "categoryUUID": "756ad43b-ea7f-11ea-acc0-0a730e7eabfe",
+            "userSubscriptionDetialsId": 20
+        }, {
+            "id": 113,
+            "requestUUID": "272164a4dd26471eadee69e236a1f99b",
+            "supplierName": "CISCO SYSTEMS",
+            "providerKey": null,
+            "userCompanyUUID": "c0a6b8fb-1292-4ffb-b327-a90638836dfb",
+            "requestCount": null,
+            "status": "ACTIVE",
+            "lastUpdatedDate": "2021-02-04T01:00:05.000+0000",
+            "supplierState": null,
+            "supplierCountry": null,
+            "requestedDate": null,
+            "categoryName": "Big Data Solutions",
+            "spend": "123333.0",
+            "userSupplierMappingUuid": "8bd72b4daf774a19b336f1644834a0b0",
+            "disruptionStatus": null,
+            "riskStatus": "LOW",
+            "ratingResponse": [{
+                "rating-type": "Financial",
+                "value-text": null,
+                "rating": "dnb.ser",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": "NOT_AVAILABLE",
+                "rating": "financial.risk",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": "LOW",
+                "rating": "financial.risk",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": "B",
+                "rating": "creditSafe.commonRating",
+                "value-numeric": null
+            }, {
+                "rating-type": "Financial",
+                "value-text": null,
+                "rating": "creditSafe.providerRating",
+                "value-numeric": "73"
+            }, {
+                "rating-type": "DowJonesTotalAMECount",
+                "value-text": null,
+                "rating": "dj.totalAmeCount",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Regulatory",
+                "value-text": null,
+                "rating": "dj.regulatory",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Environmental",
+                "value-text": null,
+                "rating": "dj.environmental",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Labor",
+                "value-text": null,
+                "rating": "dj.social",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "Regulatory",
+                "value-text": null,
+                "rating": "dj.sanctions",
+                "value-numeric": "0"
+            }, {
+                "rating-type": "DowJonesTotalAMECount",
+                "value-text": null,
+                "rating": "dj.totalAmeCount",
+                "value-numeric": "0"
+            }],
+            "categoryUUID": "756ad43b-ea7f-11ea-acc0-0a730e7eabfe",
+            "userSubscriptionDetialsId": 20
+        }, {
+            "id": 307,
+            "requestUUID": "d961ffb8d794474ead47a89f776ba633",
+            "supplierName": "CISCO SYSTEMS",
+            "providerKey": null,
+            "userCompanyUUID": "c0a6b8fb-1292-4ffb-b327-a90638836dfb",
+            "requestCount": null,
+            "status": "ACTIVE",
+            "lastUpdatedDate": "2021-02-05T01:54:05.000+0000",
+            "supplierState": null,
+            "supplierCountry": null,
+            "requestedDate": null,
+            "categoryName": "Big Data Solutions",
+            "spend": "123333.0",
+            "userSupplierMappingUuid": "8bd72b4daf774a19b336f1644834a0b0",
+            "disruptionStatus": null,
+            "riskStatus": "NOT_AVAILABLE",
+            "ratingResponse": [],
+            "categoryUUID": "756ad43b-ea7f-11ea-acc0-0a730e7eabfe",
+            "userSubscriptionDetialsId": 20
+        }, {
+            "id": 308,
+            "requestUUID": "e52f0e4526744fdd8102e32432aff9ae",
+            "supplierName": "CISCO SYSTEMS",
+            "providerKey": null,
+            "userCompanyUUID": "c0a6b8fb-1292-4ffb-b327-a90638836dfb",
+            "requestCount": null,
+            "status": "ACTIVE",
+            "lastUpdatedDate": "2021-02-05T03:31:27.000+0000",
+            "supplierState": null,
+            "supplierCountry": null,
+            "requestedDate": null,
+            "categoryName": "Big Data Solutions",
+            "spend": "123333.0",
+            "userSupplierMappingUuid": "8bd72b4daf774a19b336f1644834a0b0",
+            "disruptionStatus": null,
+            "riskStatus": "LOW",
+            "ratingResponse": [],
+            "categoryUUID": "756ad43b-ea7f-11ea-acc0-0a730e7eabfe",
+            "userSubscriptionDetialsId": 20
+        }],
+        "totalCounts": 5
+    },
+    "dashboardAPI": {
+        "totalSuppliers": 5,
+        "totalSpend": 385333,
+        "totalSanctionAppearances": 0,
+        "totalAdverseMediaAppearances": 828,
+        "totalsupplierDisruptions": null
+    },
+    "dow_SER": {
+        "statusCode": 200,
+        "body": {
+            "DOW_JONES_ADVANCE": {
+                "SUPPLIER_KEY": "NOT AVAILABLE",
+                "DOWJones": [{
+                    "issueName": "Regulatory",
+                    "allegations": {
+                        "Corruption Issues": [],
+                        "Regulatory Issues": [],
+                        "Fraud Issues": [],
+                        "Sanctions": []
+                    },
+                    "totalCount": 0
+                }, {
+                    "issueName": "Environment/Production",
+                    "allegations": {
+                        "Product/Service Issues": [],
+                        "Production/Supply Chain Issues": [],
+                        "Environmental Issues": []
+                    },
+                    "totalCount": 0
+                }, {
+                    "issueName": "Social/Labour",
+                    "allegations": {
+                        "Workforce Disputes": [],
+                        "Discrimination/Workforce Rights Issues": [],
+                        "Workforce Health/Safety Issues": [],
+                        "Human Rights Issues": []
+                    },
+                    "totalCount": 0
+                }],
+                "responseDate": "2021-02-01T01:00:05.000+0000"
+            },
+            "SER": {
+                "SER": {
+                    "riskScore": "6"
+                },
+                "responseDate": "2021-02-01T01:55:44.000+0000"
+            },
+            "REQUEST_DETAILS": {
+                "STATUS": "ACTIVE",
+                "SUBSCRIPTION_END_DATE": "2021-11-19T12:11:44.000+0000",
+                "SUPPLIER_DETAILS": {
+                    "employees": null,
+                    "headQuaters": null,
+                    "phoneNumber": null,
+                    "duns_number": "113206967",
+                    "sales": null,
+                    "established": null,
+                    "summary": null,
+                    "chief_executive_officer_name": "",
+                    "cfo": null,
+                    "vicePresident": null,
+                    "website": null,
+                    "facebook": null,
+                    "linkedIn": null,
+                    "sic_1_description": "Investors, nec",
+                    "sic_2_description": "",
+                    "sic_3_description": "",
+                    "sic_4_description": "",
+                    "sic_5_description": "",
+                    "sic_6_description": "",
+                    "naics_1_code": "523910",
+                    "mailing_city_name": "Doral",
+                    "status_code": null,
+                    "us_1987_sic_5": null,
+                    "naics_1_code_description": "Miscellaneous Intermediation",
+                    "naics_6_code": "",
+                    "physical_street_address": null,
+                    "mailing_state_province_abbreviat": "FL",
+                    "version": null,
+                    "national_identification_number": "",
+                    "mailing_state_province_name": "Florida",
+                    "naics_4_code_description": "",
+                    "physical_city_name": null,
+                    "filler_dup": "",
+                    "dias_code": "",
+                    "naics_3_code_description": "",
+                    "physical_country_name": null,
+                    "dnb_mailing_continent_code": "6",
+                    "mailing_address": "4690 NW 113th Pl",
+                    "subsidiary_indicator": null,
+                    "global_ultimate": "113206967",
+                    "timestamp": null,
+                    "dnb_mailing_country_code": "805",
+                    "hierarchy_code": "00",
+                    "global_ultimate_business_name": "",
+                    "business_name": "Occidental Group Investments, LLC",
+                    "dnb_mailing_state_province_code": null,
+                    "us_1987_sic_4": null,
+                    "mailing_postal_code": "331784344",
+                    "naics_3_code": "",
+                    "national_identification_type_cod": "",
+                    "mailing_country_name": "USA",
+                    "us_1987_sic_2": null,
+                    "naics_4_code": "",
+                    "transaction_indicator": null,
+                    "dnb_mailing_city_code": "002170",
+                    "us_1987_sic_3": null,
+                    "filler": "",
+                    "naics_2_code_description": "",
+                    "naics_5_code_description": "",
+                    "naics_5_code": "",
+                    "physical_state_province_name": null,
+                    "us_1987_sic_6": null,
+                    "chief_executive_officer_title": null,
+                    "naics_6_code_description": "",
+                    "naics_2_code": "",
+                    "extended_gu_duns_number": null,
+                    "extended_gu_business_name": null,
+                    "us_1987_sic_1": "67990000"
+                },
+                "LATEST_RESPONSE_DATE": "2021-02-01T01:55:44.000+0000",
+                "SUPPLIER_NAME": "OCCIDENTAL GROUP INVESTMENTS, LLC"
+            },
+            "DOW_JONES_SANCTIONS": {
+                "SUPPLIER_KEY": "NOT AVAILABLE",
+                "DOWJones": [{
+                    "issueName": "Sanctions Control and Ownership",
+                    "allegations": {
+                        "Category": [],
+                        "Identification": [],
+                        "Source": []
+                    },
+                    "totalCount": 0
+                }],
+                "responseDate": "2021-02-01T01:00:05.000+0000"
+            }
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": {
+        "name":"Mikee",
+        "last_name": "Seidlitz",
+        "age": "29",
+        "isDescription": "is breaking grounds in the UI dev field.",
+        "blog": "Sint ipsum fugiat eiusmod amet sint non nulla. Duis officia nulla magna aliqua elit in dolore enim laboris deserunt ullamco. Ea ex do deserunt minim et cillum duis nostrud ipsum velit laboris Lorem. Aliquip pariatur quis enim consequat incididunt Lorem minim magna aliqua excepteur. Consectetur ea eu aute consectetur ut sunt fugiat exercitation consectetur ut. Laboris mollit duis ea velit anim fugiat ea tempor sunt.",
+        "Links":[
+            {"title": "Game SCheduler"},
+            {"title": "Randomizer"},
+            {"title": "NLP Simulator"}
+        ],
+        "patreons":12,
+        "totalAmt":145
+    }
+    
+  }
