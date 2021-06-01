@@ -1,54 +1,14 @@
-return {
-    template: {
-      template: `<div>
-        <div id="chart" style="width: 100%; height: 600px;"></div>
-      </div>`,
-      data() {
-        return {
-        //   testData: 'test data'
-        countries: [
-            ["San-Francisco (1906)", 1500],
-            ["Messina (1908)", 87000],
-            ["Ashgabat (1948)", 175000],
-            ["Chile (1960)", 10000],
-            ["Tian Shan (1976)", 242000],
-            ["Armenia (1988)", 25000],
-            ["Iran (1990)", 50000]
-        ],
-        headers: ["Name", "Death toll"]
-        }
-      },
-      props: [],
-      methods: {
-        send(msg) {
-          /**
-           * `message` field will be sent as user reply and will NOT be stored in mergeField
-           * `myData` field will be stored in mergeField
-           **/
-          this.sendMessage({
-            message: msg,
-            myData: msg
-          });
-        },
-      },
-      mounted () {
-        console.log(45454)
-            // set the data
-            var data = {
-              header: this.headers,
-              rows: this.countries
-            };
-            // create the chart
-            var chart = anychart.bar();
-            // add the data
-            chart.data(data);
-            // set the chart title
-            chart.title("The deadliest earthquakes in the XXth century");
-            // draw
-            chart.container("chart");
-            chart.draw();
-      },
-      computed: {}
-    },
-    "showComponentInMessage": true // if true component will be shown in the message bubble
+let data =  [ { "date": "04/26/2021", "blog": "Nice game last night. Won with my partner 6-1 6-1. Were poaching balls well. I was serving well especially. The team fought well.. I think with the last singles match being defaulted we will win 3-2.", "share": "public", "from": "ag3@test.com", "id": 1619442312407, "timestamp": 1619442312407, "title": "This is my blog for the day" }, { "share": "private", "id": 1619384648873, "from": "angelodeasis18@gmail.com", "timestamp": 1619384648873, "title": "Ban Appeal - NeptuneMilk", "date": "04/25/2021", "blog": "ojkhbk" }, { "id": 1619355856588, "timestamp": 1619355856588, "title": "Should I?", "from": "ag3@test.com", "share": "private", "date": "04/25/2021", "blog": "Should I continue taking lessons? Or just let the two boys improve more and learn more with the pro?\n\nNot sure what's the best thing to do here.. or we just all take the lessons!? Its just going to be a little costly as the three of us take lessons every weekend... Thats 120 a week.. \n\nwe can probably do three times a month for 360.. Thats a little manageable.. but really tight.\n\nI think thats a good compromise given the conditions..\n" }, { "date": "04/25/2021", "timestamp": 1619335277636, "share": "public", "blog": "Finally making this blog private and public functional.\n\nThat was one headache! I just forgot that in the v-if html there was a true or false with one equal sign...\n\nIt was messing up the values of the object in the store.\n\nCant believe that was it,,, whew!", "title": "Worked!", "from": "ag3@test.com", "id": 1619335277636 }, { "blog": "asdasd", "date": "04/25/2021", "timestamp": 1619335096852, "id": 1619335096852, "from": "Aiden@test.com", "share": "private", "title": "BBM1356" }, { "id": 1619334997859, "from": "Aiden@test.com", "share": "public", "title": "THIS IS THE LATEST ONE", "blog": "asdasd", "timestamp": 1619334997859, "date": "04/25/2021" }, { "id": 1619280846674, "blog": "I learn to ride a bike at 2 years old. I have the red small trike my dad bought me for Christmas.\n\nIts awesome!", "timestamp": 1619280846674, "title": "Ride a bike", "date": "04/24/2021", "from": "Aiden@test.com" }, { "title": "Tennis blog", "from": "ag3@test.com", "date": "04/24/2021", "blog": "Ive been on a 8 losing streak in the ladder. Its very discouraging to say the least. Ive been working on court percentage, taking advantage of short balls, attacking the ball to players weak side. I have some success on this. I just feel like my net game is very weak... Im not as reactive to go to net, and if I do, I dont know how to position myself for a good volley and unsure if I am on the right moment to even go to the net. This causes the opponent to pass, lob and leave me defenseless instead of being able to pressure.\n\nMy forehand is good. I use it a lot and I score. But as game lengthens, fatigue sets in, and my pace decrease on those shots. So I am better during the first set and decline because of fatigue.\n\nMy serve - is very shaky. I thought I had my first serve down, but I lost it. Thats a story for another day...\n\nI just got to play to be tactical.. shorten points by playing differently. By making the first move, I can prob do this. I might be able to end the point quickly for either both of us - hah. \n\nAnyway. Till then.", "share": "public", "timestamp": 1619280692029, "id": 1619280692029 } ]
+
+console.log(data)
+
+
+let tempArray = [];
+data.forEach(e => {
+  if(e.from == 'ag3@test.com') {
+    console.log(e)
+    tempArray.push(e)
   }
+});
+
+console.log(tempArray)

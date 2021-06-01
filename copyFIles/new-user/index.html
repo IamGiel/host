@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <base href="/" />
+    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Beroe LiVE.Ai – Next generation procurement intelligence platform</title>
+    <meta name="description" content="Next generation procurement intelligence platform" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.webapp" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="preload" as="style">
+    <link href='./../../../node_modules/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
+
+    <script src="https://chat.staging.onereach.ai/lib/richWebChat.umd.js"></script>
+    <link rel="stylesheet" href="https://chat.staging.onereach.ai/lib/richWebChat.css"/>
+    <style>
+     /* add bot avatar start */
+        .message-wrapper {
+          position: relative;
+        }
+        .message-wrapper > div {
+          position: static;
+          transform: none;
+        }
+        .message-wrapper.message-wrapper--left {
+          padding-left: 40px;
+        }
+        .message-wrapper.message-wrapper--left > div::after {
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          background-color: black;
+          min-width: 30px;
+          min-height: 30px;
+          content: '';
+          border-radius: 50%;
+          background-image: url("https://cdn.worldvectorlogo.com/logos/3ds-max-full.svg");
+          background-size: cover;
+          background-position: center 20%;
+        }
+        /* add bot avatar end*/
+
+      </style>
+</head>
+
+  <body style="margin: 0px; background: #f8f8f8!important;">
+    <!--[if lt IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <jhi-main></jhi-main>
+    <noscript>
+      <h1>You must enable javascript to view this page.</h1>
+    </noscript>
+    <script type="text/javascript" language="javascript">
+      // show an error message if the app loading takes more than 5 sec
+      window.onload = function() {
+        setTimeout(showError, 4000);
+       
+      };
+
+      function showError() {
+        var errorElm = document.getElementById('jhipster-error');
+        if (errorElm && errorElm.style) {
+          errorElm.style.display = 'block';
+        }
+      }
+    </script>
+    <!-- uncomment this for adding service worker
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/service-worker.js')
+                        .then(function () {
+                            console.log('Service Worker Registered');
+                        });
+                });
+            }
+        </script>
+    -->
+    <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- In <head> add scripts and styles to your html page -->
+    <script src="https://chat.staging.onereach.ai/lib/richWebChat.umd.js"></script>
+    <link rel="stylesheet" href="https://chat.staging.onereach.ai/lib/richWebChat.css"/>
+
+    <!-- insert code below into <body> -->
+    <!-- <div id="rwc"></div> -->
+   
+<script id="onereach" type="text/javascript">
+
+  var token = window["myToken"];
+  // window["rwcInstance"] = false;
+  //  runChatBot = (asd) =>  {
+    // var RWC = richWebChat.default
+    // window['app'] = new RWC({
+      // container: '#rwc', // DOM element selector where chat will be inserted
+      //  chatUrl: 'https://chat.staging.onereach.ai/GapF3hg0QZ-V3pVTbzuZQA/0n446r6', // url of your chat. required
+      // autoExpandDelay: 10000,
+      // position: 'bottom-right',
+      // welcomeMessage: 'Hi! 👋🏼 Abi Here.',
+      // showCloseIcon: true,
+      // inviteTimeout: 2000,
+      // widgetColor: 'transparent',
+      // allowStartNewConversation: false,
+      // thumbLogo: "https://files.staging.api.onereach.ai/public/19aa45de-1834-419f-95de-95536f3b9940/images/botImage.png",
+      // animation: 'pulse', // 'pulse', 'ring', 'zoom',
+      // pageData: { authData: asd }
+    // })
+
+    // if(RWC){
+    //   window["rwcInstance"] = true;
+    // }
+    
+  // }
+
+
+
+
+  // var pushState = history.pushState;
+  // history.pushState = function () {
+  //     pushState.apply(history, arguments);
+  //     var signinPage = window.location.href.indexOf("signin") > 0;
+  //     document.getElementsByClassName('rwc-embed__thumb-desc').onclick = ()=> {
+  //        window['app'].closeChat()
+  //     }
+  //     if(!signinPage && window["rwcInstance"] == false){
+  //       // alert(window["myToken"])
+  //       var myStorage = JSON.parse(window.localStorage.getItem("jhi-accesstoken"));
+  //       runChatBot("bearer " + myStorage);
+        
+  //     }
+  // };
+
+  // navigationType = () => {
+  // // document.querySelector(".rwc-embed__thumb-wrapper").style.opacity = 0;
+  // var signinPage = window.location.href.indexOf("signin") > 0;
+  // var result;
+  // var p;
+
+  // if (window.performance.navigation) {
+  //     result=window.performance.navigation;
+  //     if (result==255){result=4} // 4 is my invention!
+  // }
+
+  // if (window.performance.getEntriesByType("navigation")){
+  //   p=window.performance.getEntriesByType("navigation")[0]["type"];
+
+  //   if (p=='navigate'){result=0}
+  //   if (p=='reload'){result=1}
+  //   if (p=='back_forward'){result=2}
+  //   if (p=='prerender'){result=3} //3 is my invention!
+  // }
+  //   console.log(result)
+  //   console.log(signinPage)
+  //   if(result == 1 && !signinPage){
+  //   //  alert("this block called");
+  //   var myStorage = JSON.parse(window.localStorage.getItem("jhi-accesstoken"));
+  //   // alert(myStorage);
+  //    runChatBot("bearer " + myStorage);
+  //   }
+  // }
+
+  // navigationType();
+
+
+  
+
+</script>
+    <!-- <script src="https://code.tidio.co/hmapxgjuznshacaq1zkugcpl7j7r1e2s.js" async></script> -->
+</body>
+
+
+</html>
+
+
