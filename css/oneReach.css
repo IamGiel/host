@@ -13,6 +13,22 @@
     transition: all ease 0.3s!important;
 }
 
+.buttons-list button.rwc-button {
+    height: auto!important;
+    padding: 6px 10px!important;
+    color: white!important;
+    border-radius: 5px!important;
+    background: linear-gradient( 
+343.11deg
+ , #544ad8 0%, #804cd9 100%)!important;
+    border-color: transparent!important;
+    box-shadow: 1px 1px 0px lightgrey!important;
+    position: relative!important;
+    top: 0px!important;
+    transition: all ease 0.3s!important;
+    margin: 8px;
+}
+
 
 /* .message-bubble {
     
