@@ -13,7 +13,7 @@
     transition: all ease 0.3s!important;
 }
 
-.buttons-list {
+.buttons-list button.rwc-button:not(:last-of-type), rwc-button--outlined.rwc-button--primary {
     height: auto!important;
     padding: 6px 10px!important;
     color: white!important;
