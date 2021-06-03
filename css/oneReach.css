@@ -30,6 +30,12 @@
 }
 
 
+.buttons-list button.rwc-button:not(:last-of-type):active, rwc-button--outlined.rwc-button--primary:active{
+    box-shadow: 0 3px 0 #00823F;
+    top: 3px;
+  }
+
+
 /* .message-bubble {
     
 }
