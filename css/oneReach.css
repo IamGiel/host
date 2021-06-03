@@ -13,7 +13,7 @@
     transition: all ease 0.3s!important;
 }
 
-.buttons-list button.rwc-button {
+.buttons-list {
     height: auto!important;
     padding: 6px 10px!important;
     color: white!important;
