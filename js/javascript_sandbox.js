@@ -132,7 +132,7 @@
 //       "value": item
 //     })
 //     }, initialValue);
-   
+
 //   };
 
 //   console.log(convertArrayToObject(availableFilters))
@@ -307,7 +307,7 @@ function fetchData() {
     })
     .then(response => response.json())
     .then(data => {
-      if(data){
+      if (data) {
         listContainer.style.display = "block";
       }
       result = JSON.parse(data._source.data);
@@ -318,19 +318,24 @@ function fetchData() {
     });
 }
 
-function LoopTest2(list){
+function LoopTest2(list) {
   console.log(list.data)
   var filterSelect = document.getElementById('test');
-  
+
   for (i = 0; i < list.data.length; i++) {
-      filterSelect.options.add( new Option(`${list.data[i].label}`,`${list.data[i].value}`) )
+    filterSelect.options.add(new Option(`${list.data[i].label}`, `${list.data[i].value}`))
   }
   returnedData = list.data;
 }
 
 function onSelectFilter() {
-  console.log(document.getElementById("test").value)
+  // console.log(document.getElementById("test").value)
   document.getElementById("slctValue").innerHTML = document.getElementById("test").value;
+  returnedData.forEach(e => {
+    if (e.value == document.getElementById("test").value) {
+      console.log("match: " + JSON.stringify(e))
+    }
+  });
 
 }
 
@@ -351,3 +356,231 @@ fetchData();
 console.log(returnedData)
 
 // return returnedData;
+
+
+// ================
+
+let aggregateData = {
+  "aggregations": {
+    "attachments": [],
+    "attributes": [{
+      "key": "noRelationship",
+      "doc_count": 13
+    }],
+    "relationshipRating": [],
+    "tags": [],
+    "internalCategory": [],
+    "spendGroups": [],
+    "recentPercentile": [],
+    "label": [],
+    "warnings": [{
+      "key": "none",
+      "doc_count": 13
+    }],
+    "country": [{
+      "code": "IN",
+      "key": "India",
+      "doc_count": 13
+    }],
+    "state": [{
+      "code": "",
+      "key": "India::Maharashtra",
+      "doc_count": 3
+    }, {
+      "code": "",
+      "key": "India::Tamil Nadu",
+      "doc_count": 3
+    }, {
+      "code": "",
+      "key": "India::Delhi",
+      "doc_count": 1
+    }, {
+      "code": "",
+      "key": "India::Gujarat",
+      "doc_count": 1
+    }, {
+      "code": "",
+      "key": "India::Jharkhand",
+      "doc_count": 1
+    }, {
+      "code": "",
+      "key": "India::Uttar Pradesh",
+      "doc_count": 1
+    }, {
+      "code": "",
+      "key": "India::West Bengal",
+      "doc_count": 1
+    }],
+    "city": [{
+      "key": "India::Maharashtra::Mumbai",
+      "doc_count": 2
+    }, {
+      "key": "India::Tamil Nadu::Chennai",
+      "doc_count": 2
+    }, {
+      "key": "India::Delhi::Delhi",
+      "doc_count": 1
+    }, {
+      "key": "India::Gujarat::Ankleshwar",
+      "doc_count": 1
+    }, {
+      "key": "India::Jharkhand::Giridih",
+      "doc_count": 1
+    }, {
+      "key": "India::Maharashtra::Raigad",
+      "doc_count": 1
+    }, {
+      "key": "India::Tamil Nadu::Chennai Tamilnadu",
+      "doc_count": 1
+    }, {
+      "key": "India::Uttar Pradesh::Nadu",
+      "doc_count": 1
+    }, {
+      "key": "India::West Bengal::Kolkata",
+      "doc_count": 1
+    }],
+    "sustainability": [],
+    "sustainability.subTypes": [],
+    "food": [],
+    "food.subTypes": [],
+    "quality": [{
+      "key": "iso9000",
+      "doc_count": 1,
+      "name": "ISO 9000/9001: Quality management systems"
+    }, {
+      "key": "quality",
+      "doc_count": 1,
+      "name": "Quality"
+    }],
+    "quality.subTypes": [],
+    "supplierTags": [{
+      "key": "chemicals",
+      "doc_count": 3
+    }, {
+      "key": "acetal copolymer hollow rod",
+      "doc_count": 1
+    }, {
+      "key": "acetal nylon strip",
+      "doc_count": 1
+    }, {
+      "key": "acid protein hydrolysate",
+      "doc_count": 1
+    }, {
+      "key": "acrylic pipe",
+      "doc_count": 1
+    }, {
+      "key": "acrylic rod",
+      "doc_count": 1
+    }, {
+      "key": "acrylic rods exporter",
+      "doc_count": 1
+    }, {
+      "key": "adhesives",
+      "doc_count": 1
+    }, {
+      "key": "agrochemicals",
+      "doc_count": 1
+    }, {
+      "key": "anchors",
+      "doc_count": 1
+    }],
+    "security": [],
+    "security.subTypes": [],
+    "diversity": [],
+    "diversity.subTypes": [],
+    "supplierUpdated": [{
+      "key": 0,
+      "key_as_string": "false",
+      "doc_count": 13
+    }],
+    "emailAvailable": [{
+      "key": 1,
+      "key_as_string": "true",
+      "doc_count": 8
+    }, {
+      "key": 0,
+      "key_as_string": "false",
+      "doc_count": 5
+    }],
+    "supplierType": [{
+      "key": "",
+      "doc_count": 13
+    }],
+    "sector": [{
+      "key": "42",
+      "doc_count": 13,
+      "description": "Wholesale Trade"
+    }],
+    "subsector": [{
+      "key": "423",
+      "doc_count": 13,
+      "description": "Merchant Wholesalers, Durable Goods"
+    }],
+    "group": [{
+      "key": "4235",
+      "doc_count": 13,
+      "description": "Metal and Mineral (except Petroleum) Merchant Wholesalers"
+    }],
+    "diversityProgram": [{
+      "key": 0,
+      "key_as_string": "false",
+      "doc_count": 13
+    }],
+    "communities": [],
+    "communityStatus": [],
+    "suggestions": [{
+      "value": "Chemicals",
+      "label": "Chemicals"
+    }, {
+      "value": "Acetal Copolymer Hollow Rod",
+      "label": "Acetal Copolymer Hollow Rod"
+    }, {
+      "value": "Acetal Nylon Strip",
+      "label": "Acetal Nylon Strip"
+    }, {
+      "value": "Acid Protein Hydrolysate",
+      "label": "Acid Protein Hydrolysate"
+    }, {
+      "value": "Acrylic Pipe",
+      "label": "Acrylic Pipe"
+    }, {
+      "value": "Acrylic Rod",
+      "label": "Acrylic Rod"
+    }, {
+      "value": "Acrylic Rods Exporter",
+      "label": "Acrylic Rods Exporter"
+    }, {
+      "value": "Adhesives",
+      "label": "Adhesives"
+    }, {
+      "value": "Agrochemicals",
+      "label": "Agrochemicals"
+    }, {
+      "value": "Anchors",
+      "label": "Anchors"
+    }],
+    "filterSuggestions": {
+      "naics": [{
+        "value": "42",
+        "label": "Wholesale"
+      }]
+    }
+  }
+};
+
+console.log(aggregateData)
+
+
+// {value: "Chemicals", label: "Chemicals"},
+// {value: "Acetal Copolymer Hollow Rod", label: "Acetal Copolymer Hollow Rod"},
+// {value: "Acetal Nylon Strip", label: "Acetal Nylon Strip"},
+// {value: "Acid Protein Hydrolysate", label: "Acid Protein Hydrolysate"},
+// {value: "Acrylic Pipe", label: "Acrylic Pipe"},
+// {value: "Acrylic Rod", label: "Acrylic Rod"},
+// {value: "Acrylic Rods Exporter", label: "Acrylic Rods Exporter"},
+// {value: "Adhesives", label: "Adhesives"},
+// {value: "Agrochemicals", label: "Agrochemicals"},
+// {value: "Anchors", label: "Anchors"}
+
+let nlu10 = {"result":{"type":"TEXT","contextId":"3_TdcOE5rkD9aqwM1MF23","context":"Supplier","topAnswers":[{"type":"TEXT","contextId":"3_TdcOE5rkD9aqwM1MF23","context":"Supplier","responseId":"h5HJCAw5vloIyx~0C46Z2","confidence":90.64,"response":"skillSupplierLookUp"},{"type":"","contextId":"None","context":"None","responseId":"None","confidence":1.08,"response":"None"},{"type":"TEXT","contextId":"3_TdcOE5rkD9aqwM1MF23","context":"Supplier","responseId":"klzeWsHP_ZEmtCi6hmqja","confidence":1.01,"response":"skillSupplierRisk"}],"entities":[{"parsedValue":["beverage cans"],"value":"beverage can","entity":"CategoryListEntity","detailedType":"CategoryListEntity","startPos":0,"endPos":12,"confidence":100},{"parsedValue":"suppliers","value":"suppliers","entity":"SupplierKeyWord","detailedType":"SupplierKeyWord","startPos":13,"endPos":22,"confidence":94.33952599999999},{"parsedValue":"India","value":"India","entity":"geographyV2","detailedType":"countryRegion","startPos":26,"endPos":31,"confidence":100}],"question":"beverage can suppliers in India","phrase":"beverage can suppliers in India","response":"skillSupplierLookUp","responseId":"h5HJCAw5vloIyx~0C46Z2","parsedResponse":"skillSupplierLookUp","contextQueryId":"480dce29-0877-425b-b3b6-3ba8b69fbe5a","confidence":90.64,"topResponses":[{"type":"TEXT","contextId":"3_TdcOE5rkD9aqwM1MF23","context":"Supplier","responseId":"h5HJCAw5vloIyx~0C46Z2","confidence":90.64,"response":"skillSupplierLookUp","parsedResponse":"skillSupplierLookUp"},{"type":"","contextId":"None","context":"None","responseId":"None","confidence":1.08,"response":"None","parsedResponse":"None"},{"type":"TEXT","contextId":"3_TdcOE5rkD9aqwM1MF23","context":"Supplier","responseId":"klzeWsHP_ZEmtCi6hmqja","confidence":1.01,"response":"skillSupplierRisk","parsedResponse":"skillSupplierRisk"}]}};
+console.log(nlu10)
