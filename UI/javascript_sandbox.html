@@ -13,10 +13,10 @@
 
 <body>
 
-    <outline type="rss" text="Road Bikes" xmlUrl="http://www.google.com/exampleurl.opml" 
-         htmlUrl="http://www.google.com/sampleurl1.opml"/>
+    <outline type="rss" text="Road Bikes" xmlUrl="http://www.google.com/exampleurl.opml"
+        htmlUrl="http://www.google.com/sampleurl1.opml" />
     <outline type="rss" text="Mountain Bikes" xmlUrl="http://www.google.com/exampleurl2.opml"
-         htmlUrl="http://www.google.com/sampleurl2.opml"/>
+        htmlUrl="http://www.google.com/sampleurl2.opml" />
     <!-- <button id="get-location">GET LOCATION</button>
     <div id="latitude"></div>
     <div id="longitude"></div> -->
@@ -31,7 +31,16 @@
 
     <h1>Javascript Sandbox - check console</h1>
 
-    <ol id="test"></ol>
+    <!-- <ol id="test"></ol> -->
+    
+    <div id="listContainer">
+        <span>This is the list:</span>
+        <select id="test" onchange="onSelectFilter()">
+            <!-- dynamically create option tags here -->
+        </select>
+    </div>
+
+    <div id="slctValue">test</div>
 
     <div id="narrowSearch"> Do you want to narrow down the search? </div>
     <button class="custom-button" id="yes">yes</button>
