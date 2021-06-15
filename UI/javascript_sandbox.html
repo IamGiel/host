@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 </head>
 
 <body>
@@ -32,13 +33,20 @@
     <h1>Javascript Sandbox - check console</h1>
 
     <!-- <ol id="test"></ol> -->
+
+    <div id="slideContainer"></div>
     
-    <div id="listContainer">
-        <span>This is the list:</span>
-        <select id="test" onchange="onSelectFilter()">
-            <!-- dynamically create option tags here -->
-        </select>
-    </div>
+    <div id="selectContainer2">
+        <div>
+          <span>Here are the available NAICS codes, or certifications that a supplier may posses. Lets narrow down our search:</span>
+        </div>
+        
+        <div>
+          <select id="test3" onchange="onSelectFilterNaics()"></select>
+          <button class="custom-button" id="send">select</button>
+        </div>
+        
+      </div>
 
     <div id="slctValue">test</div>
 
@@ -49,6 +57,8 @@
 
     <script src="../js/javascript_sandbox.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
+
 </body>
 
 
