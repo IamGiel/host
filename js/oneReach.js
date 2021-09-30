@@ -346,3 +346,18 @@ if(!userReq_is_region == "country" && loctype=="country"){
 }
 
 console.log(res)
+
+
+
+let today = new Date().toISOString().slice(0, 10)
+
+const startDate  = '2016-06-01';
+const endDate    = today;
+
+const diffInMs   = new Date(endDate) - new Date(startDate)
+// console.log(diffInMs)
+const in_days = diffInMs / (1000 * 60 * 60 * 24);
+const in_years = parseInt( in_days / 365)
+
+console.log("Days: " + in_days.toLocaleString());
+console.log("Years: " + in_years);

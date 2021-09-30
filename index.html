@@ -89,6 +89,8 @@
           | NLP | Ionic
         </p>
 
+        <p>Coding for atleast: <span id="time_period"></span></p>
+
 
         <ul class="list-inline list-social-icons mb-0">
           <li class="list-inline-item">
@@ -410,9 +412,11 @@
           recordings and love to play Bach, Weiss, Taregga, Villalobos and many other pieces of music. But I got into
           piano lately (just trying it out).
           <br>
-          <hr> Web development stirs a lot of interest because I am able to create and build through code. Its powerful what slapping on the keyboard can do haha! So I always strive to improve on this skill.  I know this to be true, that when I immerse
-          myself to a practice, Ill be one of the very best to do it. 
-          
+          <hr> Web development stirs a lot of interest because I am able to create and build through code. Its powerful
+          what slapping on the keyboard can do haha! So I always strive to improve on this skill. I know this to be
+          true, that when I immerse
+          myself to a practice, Ill be one of the very best to do it.
+
           Hence, my journey to mastery.
         </p>
       </div>
@@ -469,6 +473,27 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+  <script>
+    let today = new Date().toISOString().slice(0, 10)
+
+    const startDate = '2016-06-01';
+    const endDate = today;
+
+    const diffInMs = new Date(endDate) - new Date(startDate)
+    // console.log(diffInMs)
+    const in_days = diffInMs / (1000 * 60 * 60 * 24);
+    const in_years = parseInt(in_days / 365)
+
+    console.log("Days: " + in_days.toLocaleString());
+    console.log("Years: " + in_years);
+
+    var elem = document.querySelector('#time_period');
+
+    // Get text content
+    var text = elem.textContent;
+    // Set text content
+    elem.textContent = in_years + " years, or " + in_days.toLocaleString() + " days to be exact.";
+  </script>
 
 </body>
 
