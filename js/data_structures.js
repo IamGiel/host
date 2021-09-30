@@ -1,126 +1,120 @@
-/* Sets */
-
-function mySet() {
-  console.log(this)
-  this.gel = (something) => {
-    console.log("gel this is " + something)
+// get NLU data
+// let paramsObj = await this.mergeFields['apiShortlist'].get({
+//     path: 'params'
+//   });
+  let paramsObj = {
+    "flowId": "api shortlist",
+    "isSync": false,
+    "qualification": "state",
+    "qualificationSubFilter": "India::Karnataka::Maharashtra",
+    "location": "India",
+    "diversity": "",
+    "supplierName": "",
+    "narrowSearchExit": "true",
+    "eventId": "sszQUpMpo4WHMRPMizygV1"
   }
-  // the var collection will hold the set
-  var collection = [];
-  // this method will check for the presence of an element and return true or false
-  this.has = function(element) {
-      return (collection.indexOf(element) !== -1);
-  };
-  // this method will return all the values in the set
-  this.values = function() {
-      return collection;
-  };
-  // this method will add an element to the set
-  this.add = function(element) {
-      if(!this.has(element)){
-          collection.push(element);
-          return true;
+  let params = {};
+  let qual = `{${paramsObj.qualification} : ${paramsObj.qualification}}`;
+  
+  function getLocation() {
+    if (paramsObj.location != 'null' ) {
+      params.location = [{
+        "zipCode": "",
+        "country": `${paramsObj.location}`,
+        "state": "",
+        "city": ""
+      }]
+      if(paramsObj.qualification == 'state'){
+        params.location = [{
+            "zipCode": "",
+            "country": `${paramsObj.location}`,
+            "state": `${paramsObj.qualificationSubFilter.replace(/^[^_]*::/,'')}`,
+            "city": ""
+          }]
       }
-      return false;
-  };
-  // this method will remove an element from a set
-  this.remove = function(element) {
-      if(this.has(element)){
-          index = collection.indexOf(element);
-          collection.splice(index,1);
-          return true;
+      if(paramsObj.qualification == 'city'){
+        params.location = [{
+            "zipCode": "",
+            "country": `${paramsObj.location}`,
+            "state": "",
+            "city": `${paramsObj.qualificationSubFilter.replace(/^[^_]*::/,'')}`
+          }]
       }
-      return false;
-  };
-  // this method will return the size of the collection
-  this.size = function() {
-      return collection.length;
-  };
-  // this method will return the union of two sets
-  this.union = function(otherSet) {
-      var unionSet = new mySet();
-      var firstSet = this.values();
-      var secondSet = otherSet.values();
-      firstSet.forEach(function(e){
-          unionSet.add(e);
-      });
-      secondSet.forEach(function(e){
-          unionSet.add(e);
-      });
-      return unionSet;
-  };
-  // this method will return the intersection of two sets as a new set
-  this.intersection = function(otherSet) {
-      var intersectionSet = new mySet();
-      var firstSet = this.values();
-      firstSet.forEach(function(e){
-          if(otherSet.has(e)){
-              intersectionSet.add(e);
-          }
-      });
-      return intersectionSet;
-  };
-  // this method will return the difference of two sets as a new set
-  this.difference = function(otherSet) {
-      var differenceSet = new mySet();
-      var firstSet = this.values();
-      firstSet.forEach(function(e){
-          if(!otherSet.has(e)){
-              differenceSet.add(e);
-          }
-      });
-      return differenceSet;
-  };
-  // this method will test if the set is a subset of a different set
-  this.subset = function(otherSet) {
-      var firstSet = this.values();
-      return firstSet.every(function(value) {
-        return otherSet.has(value);
-      });
-  };
+    }
+    else {
+      params.location = [{
+        "zipCode": "",
+        "country": "",
+        "state": "",
+        "city": ""
+      }];
+    }
+  }
+  
+  // {
+  //   "flowId": "api shortlist",
+  //   "isSync": false,
+  //   "qualification": "null",
+  //   "location": "null",
+  //   "diversity": "",
+  //   "narrowSearchExit": "",
+  //   "subfilters": "",
+  //   "SupplierOrCategoryName": "ball Corp",
+  //   "eventId": "5NFU887TK8dT8UYRw97fTZ"
+  // }
+  
+  function getQual() {
+    params.qualification = [];
+   if (paramsObj.qualification !== 'city' && paramsObj.qualification !== 'state') {
+     let key = paramsObj.qualification;
+     let val = paramsObj.qualificationSubFilter
+     if (key !== null) {
+       let parameter = {};
+       parameter[key] = val;
+       console.log(parameter)
+       params.qualification.push(parameter)
+     } else {
+       params.qualification = [];
+     }
+   } else {
+       params.qualification = [];
+     }
+ }
+  function getCatOrSupName() {
+    if ("SupplierOrCategoryName" in paramsObj && paramsObj.SupplierOrCategoryName !== 'undefined') {
+      params.SupplierOrCategoryName = `${paramsObj.SupplierOrCategoryName}`
+    } else {
+      params.SupplierOrCategoryName = null;;
+    }
+  }
+  function getSupplierName() {
+    if ("supplierName" in paramsObj && paramsObj.supplierName !== '') {
+      params.supplierName = `${paramsObj.supplierName}`
+    } else {
+      params.supplierName = null;;
+    }
+  }
+  
+  getLocation();
+  getQual();
+  // getSupplierName();
+  getCatOrSupName();
+  
+//   return params;
+console.log(params)
+
+let test_string = "India::Karnataka::Maharashtra";
+
+console.log(test_string.replace(/::/g,'/'))
+
+// =================================================
+
+const fib = (n) => {
+    if(n <= 2) return 1; 
+    let test =  fib(n-1) + fib(n-2);
+    console.log(test)
+    return fib(n-1) + fib(n-2);
+   
 }
-var setA = new mySet();  
-var setB = new mySet();  
-setA.add("a");  
-setB.add("b");  
-setB.add("c");  
-setB.add("a");  
-setB.add("d");  
-console.log(setA.subset(setB));
-console.log(setA.intersection(setB).values());
-console.log(setB.difference(setA).values());
 
-var setC = new Set();  
-var setD = new Set();  
-setC.add("a");  
-setD.add("b");  
-setD.add("c");  
-setD.add("a");  
-setD.add("d");  
-console.log(setD.values())
-setD.delete("a");
-console.log(setD.has("a"));
-console.log(setD.add("d"));
-setA.gel("I wrote here")
-console.log(setC)
-console.log(JSON.stringify(setC))
-
-// it contains
-// ["sumit","amit","anil","anish"]
-var set1 = new Set(["sumit","sumit","amit","anil","anish"]);
-  
-// it contains 'f', 'o', 'd'
-var set2 = new Set("fooooooood");
-  
-// it contains [10, 20, 30, 40]
-var set3 = new Set([10, 20, 30, 30, 40, 40]);
-  
- // it is an  empty set
-var set4 = new Set();
-
-console.log(set1)
-console.log(set2)
-console.log(set3)
-console.log(set4)
-
-
+console.log(fib(7)) 

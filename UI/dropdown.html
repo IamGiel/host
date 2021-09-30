@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2>Search/Filter Dropdown</h2>
+<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <!-- <a onclick="send(this)">About</a>
+    <a onclick="send(this)">Base</a>
+    <a onclick="send(this)">Blog</a>
+    <a onclick="send(this)">Contact</a>
+    <a onclick="send(this)">Custom</a>
+    <a onclick="send(this)">Support</a>
+    <a onclick="send(this)">Tools</a> -->
+    <div id="foo"  ></div>
+  </div>
+</div>
+
+
+
+<script>
+
+let filter_list;
+console.log(window);
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+let OBJECT = {
+  method: 'GET',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer 9d0a1468b95930e0ecc16a586ca395479edf22e133cb6a452a1c0dc3e3a59110f5d8eb78334c66339223302fccbae38d9ecf859c5a3f1fdfeef0f2d32223de37'
+  }
+}
+
+fetch('https://em.staging.api.onereach.ai/http/19aa45de-1834-419f-95de-95536f3b9940/sub/http/v1/tealbook-filters', OBJECT)
+  .then((res) => {
+    //   console.log(res)
+    return res.json();
+  })
+  .then((resJson) => {
+    console.log(JSON.parse(resJson._source.data).data)
+    filter_list = JSON.parse(resJson._source.data).data;
+    document.getElementById('foo').appendChild(makeUL(filter_list));
+  })
+
+let message_ = '';
+
+function makeUL(array) {
+  // Create the list element:
+  var list = document.createElement('div');
+
+  for (var i = 0; i < array.length; i++) {
+    // Create the list item:
+    var item = document.createElement('a');
+    item.onclick = function sendThis(r) {
+      console.log(r.target.outerText);
+      message_ = r.target.outerText;
+      send(message_);
+    };
+
+    // Set its contents:
+    item.appendChild(document.createTextNode(array[i].value));
+
+    // Add it to the list:
+    list.appendChild(item);
+  }
+
+  // Finally, return the constructed list:
+  return list;
+}
+
+function send() {
+  /**
+   * `message` field will be sent as user reply and will NOT be stored in mergeField
+   * `myData` field will be stored in mergeField
+   **/
+  sendMessage({
+    message: message_,
+    myData: message_
+  });
+}
+
+function sendMessage(obj){
+    console.log("called ? " + obj);
+    return {
+        "message":obj.message,
+        "myData":obj.myData
+    }
+    
+}
+
+</script>
+
+</body>
+</html>
+
