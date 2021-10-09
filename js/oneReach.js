@@ -645,7 +645,7 @@ console.log(cat_list)
 // to check, we need Levenshtein distance
 
 let js_data = {};
-js_data.KeyNameEntity = "Natural Gas"; // TEST TERM HERE
+js_data.KeyNameEntity = "Crude Oil"; // TEST TERM HERE
 
 
 let data = {};
@@ -740,15 +740,24 @@ if(data.is_match == true){
     data.frequency = data.data_matched.grades[0].frequency;
     data.gradeID = data.data_matched.grades[0].id;
     let loctypes = [];
+    let gradetypes = [];
+    // get location 
     for (let i = 0; i < data.data_matched.grades[0].location.length; i++) {
       const loc = data.data_matched.grades[0].location[i];
       console.log(loc)
       loctypes.push(loc["name"])
-      console.log(loctypes)
+      // console.log(loctypes)
       
+    }
+    // get grades
+    for (let i = 0; i < data.data_matched.grades.length; i++) {
+      const grds = data.data_matched.grades;
+      console.log(grds[i].id)
+      gradetypes.push(grds[i].id)
     }
     
     data.location_types = loctypes;
+    data.grade_types = gradetypes;
     
   }
 }
