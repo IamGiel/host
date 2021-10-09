@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <title>STRING CHECK SUBSTRING </title>
+<body>
+
+<p>Click the button to check where if the string includes the specified value.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+<div style="display: flex; flex: row;"> 
+  <p>The filter name:</p>&nbsp;&nbsp;&nbsp; <p id="demo"></p>
+</div>
+<div style="display: flex; flex: row;"> 
+  <p>The term: </p>&nbsp;&nbsp;&nbsp; <p id="demo2"></p>
+</div>
+
+<div style="display: flex; flex: row;"> 
+  <p>Is it matched?  </p>&nbsp;&nbsp;&nbsp; <p id="demo3"></p>
+</div>
+
+<p><strong>Note:</strong> The includes() method is not supported in IE 11 (and earlier versions).</p>
+
+<script>
+function myFunction() {
+
+  var filter_name = "Women-owned Business Enterprise".replace(/[\. ,:-]+/g, '').toLocaleLowerCase();
+  var term = "women owned".replace(/[\. ,:-]+/g, '').toLocaleLowerCase();
+
+  var n = filter_name.includes(term);
+  
+  
+  document.getElementById("demo").innerHTML = filter_name;
+  document.getElementById("demo2").innerHTML = term;
+  document.getElementById("demo3").innerHTML = n;
+}
+</script>
+
+</body>
+</html>

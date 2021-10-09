@@ -4,8 +4,7 @@ let NLU_DATA = {
       "type": "TEXT",
       "contextId": "_bBD7NdE4CJEd_VUrrM5i",
       "context": "PriceCostInfo",
-      "topAnswers": [
-        {
+      "topAnswers": [{
           "type": "TEXT",
           "contextId": "_bBD7NdE4CJEd_VUrrM5i",
           "context": "PriceCostInfo",
@@ -56,19 +55,14 @@ let NLU_DATA = {
           "parsedResponse": "toAnalyst"
         }
       ],
-      "entities": [
-        {
-          "parsedValue": [
-            {
-              "timex": "(2020-12-01,2021-12-01,P12M)",
-              "resolution": [
-                {
-                  "start": "2020-12-01",
-                  "end": "2021-12-01"
-                }
-              ]
-            }
-          ],
+      "entities": [{
+          "parsedValue": [{
+            "timex": "(2020-12-01,2021-12-01,P12M)",
+            "resolution": [{
+              "start": "2020-12-01",
+              "end": "2021-12-01"
+            }]
+          }],
           "value": "from Dec 2020 to Dec 2021",
           "entity": "datetimeV2",
           "detailedType": "daterange",
@@ -117,8 +111,7 @@ let NLU_DATA = {
       "contextName": "PriceCostInfo",
       "contextQueryId": "9871e96f-8ae1-4936-893b-c2b7cb585472",
       "confidence": 17.83,
-      "topResponses": [
-        {
+      "topResponses": [{
           "type": "TEXT",
           "contextId": "_bBD7NdE4CJEd_VUrrM5i",
           "context": "PriceCostInfo",
@@ -198,11 +191,11 @@ console.log(NLU_DATA.data.result);
 let jsNluParams = {};
 jsNluParams.geo = null;
 jsNluParams.geo_val = null;
-jsNluParams.KeyNameEntity  = null;
-jsNluParams.PriceCostEntity  = null;
-jsNluParams.PriceKeyWordEntity  = null;
-jsNluParams.geo_type  = null;
-jsNluParams.datetimeV2  = null;
+jsNluParams.KeyNameEntity = null;
+jsNluParams.PriceCostEntity = null;
+jsNluParams.PriceKeyWordEntity = null;
+jsNluParams.geo_type = null;
+jsNluParams.datetimeV2 = null;
 
 NLU_DATA.data.result.entities.forEach(r => {
   // country
@@ -231,7 +224,7 @@ NLU_DATA.data.result.entities.forEach(r => {
   }
   if (r.entity == "datetimeV2") {
     jsNluParams.datetimeV2 = r.value
-    if(r.detailedType == 'daterange'){
+    if (r.detailedType == 'daterange') {
       jsNluParams.start_range = r.parsedValue[0].resolution[0].start;
       jsNluParams.end_range = r.parsedValue[0].resolution[0].end
     }
@@ -239,9 +232,9 @@ NLU_DATA.data.result.entities.forEach(r => {
 });
 
 console.log(jsNluParams)
-  
 
-let data =  {
+
+let data = {
   "geographyV2": "japan",
   "region": false,
   "PriceChangeEntity": null,
@@ -260,15 +253,15 @@ let data =  {
 };
 // test purpose
 data.scope = {
-  "location":null,
-  "type":null,
-  "category":null
+  "location": null,
+  "type": null,
+  "category": null
 }
 console.log(data.scope);
 let scopes = data.scope;
 let array_category = [null, {}];
 let array_location = ["region", "country"];
-let array_type = ["grade","role"];
+let array_type = ["grade", "role"];
 const random_category = array_category[Math.floor(Math.random() * array_category.length)];
 const random_location = array_location[Math.floor(Math.random() * array_location.length)];
 const random_type = array_type[Math.floor(Math.random() * array_type.length)];
@@ -276,20 +269,20 @@ const random_type = array_type[Math.floor(Math.random() * array_type.length)];
 
 for (const [key, value] of Object.entries(scopes)) {
   console.log(`${key}: ${value}`);
-  if(key == "location"){
-    if(!value){
+  if (key == "location") {
+    if (!value) {
       console.log(random_location);
       data.scope.location = random_location;
     }
   }
-  if(key == "type"){
-    if(!value){
+  if (key == "type") {
+    if (!value) {
       console.log(random_type);
       data.scope.type = random_type;
     }
   }
-  if(key == "category"){
-    if(!value){
+  if (key == "category") {
+    if (!value) {
       console.log(random_category);
       data.scope.category = random_category;
     }
@@ -319,13 +312,13 @@ let dumData = {
 
 let today = new Date().toISOString().slice(0, 10)
 
-const startDate  = '2016-06-01';
-const endDate    = today;
+const startDate = '2016-06-01';
+const endDate = today;
 
-const diffInMs   = new Date(endDate) - new Date(startDate)
+const diffInMs = new Date(endDate) - new Date(startDate)
 // console.log(diffInMs)
 const in_days = diffInMs / (1000 * 60 * 60 * 24);
-const in_years = parseInt( in_days / 365)
+const in_years = parseInt(in_days / 365)
 
 console.log("Days: " + in_days.toLocaleString());
 console.log("Years: " + in_years);
@@ -335,261 +328,410 @@ console.log("Years: " + in_years);
 //Has both data
 const complete = {
   "response": {
-      "sub_category": {
-          "uuid": "756ad3b7-ea7f-11ea-acc0-0a730e7eabfe",
-          "name": "Natural Gas",
-          "id": "D335",
-          "price_type": "price_direct",
-          "cost_structure": {
-              "available": true,
-              "location": [
-                  {
-                      "id": "AU",
-                      "name": "Australia",
-                      "frequency": "Annual"
-                  },
-                  {
-                      "id": "US",
-                      "name": "USA",
-                      "frequency": "Annual"
-                  }
-              ]
+    "sub_category": {
+      "uuid": "756ad3b7-ea7f-11ea-acc0-0a730e7eabfe",
+      "name": "Natural Gas",
+      "id": "D335",
+      "price_type": "price_direct",
+      "cost_structure": {
+        "available": true,
+        "location": [{
+            "id": "AU",
+            "name": "Australia",
+            "frequency": "Annual"
           },
-          "grades": [
-              {
-                  "id": "D335-01",
-                  "name": "Industrial Natural Gas",
-                  "type": "Grade",
-                  "frequency": "Monthly",
-                  "accessible": true,
-                  "location": [
-                      {
-                          "id": "BM,CA,GL,PM,US",
-                          "name": "North America"
-                      },
-                      {
-                          "id": "AF,AM,AZ,BD,BT,CN,GE,HK,IN,IR,JP,KZ,KR,KP,KG,MO,MV,MN,NP,PK,LK,TW,TJ,TM,UZ",
-                          "name": "Asia"
-                      },
-                      {
-                          "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
-                          "name": "Europe"
-                      }
-                  ]
-              }
-          ]
-      }
+          {
+            "id": "US",
+            "name": "USA",
+            "frequency": "Annual"
+          }
+        ]
+      },
+      "grades": [{
+        "id": "D335-01",
+        "name": "Industrial Natural Gas",
+        "type": "Grade",
+        "frequency": "Monthly",
+        "accessible": true,
+        "location": [{
+            "id": "BM,CA,GL,PM,US",
+            "name": "North America"
+          },
+          {
+            "id": "AF,AM,AZ,BD,BT,CN,GE,HK,IN,IR,JP,KZ,KR,KP,KG,MO,MV,MN,NP,PK,LK,TW,TJ,TM,UZ",
+            "name": "Asia"
+          },
+          {
+            "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
+            "name": "Europe"
+          }
+        ]
+      }]
+    }
   },
   "status": {
-      "code": "beroebot.market-monitor-002",
-      "msg": "Request Processed",
-      "rts": 1632969506978,
-      "cache": false,
-      "params": {
-          "sub_category_id": "D335"
-      },
-      "version": {
-          "version": "3.0.0-SNAPSHOT",
-          "codename": "CLOVA",
-          "branch": "dev",
-          "revision": "60d1bb8",
-          "basetag": ""
-      },
-      "rms": 182
+    "code": "beroebot.market-monitor-002",
+    "msg": "Request Processed",
+    "rts": 1632969506978,
+    "cache": false,
+    "params": {
+      "sub_category_id": "D335"
+    },
+    "version": {
+      "version": "3.0.0-SNAPSHOT",
+      "codename": "CLOVA",
+      "branch": "dev",
+      "revision": "60d1bb8",
+      "basetag": ""
+    },
+    "rms": 182
   }
 }
 //Do not have cost structure data
 const no_cost_structure = {
   "response": {
-      "sub_category": {
-          "uuid": "756ac8e1-ea7f-11ea-acc0-0a730e7eabfe",
-          "name": "Crude oil",
-          "id": "A001",
-          "price_type": "price_direct",
-          "cost_structure": {
-              "available": false,
-              "location": []
-          },
-          "grades": [
-              {
-                  "id": "A001-03",
-                  "name": "Crude Oil (Intratec)",
-                  "type": "Grade",
-                  "frequency": "Monthly",
-                  "accessible": true,
-                  "location": [
-                      {
-                          "id": "AE",
-                          "name": "United Arab Emirates"
-                      },
-                      {
-                          "id": "GB",
-                          "name": "United Kingdom"
-                      },
-                      {
-                          "id": "NG",
-                          "name": "Nigeria"
-                      },
-                      {
-                          "id": "US",
-                          "name": "USA"
-                      }
-                  ]
-              },
-              {
-                  "id": "A001-01",
-                  "name": "Brent",
-                  "type": "Grade",
-                  "frequency": "Monthly",
-                  "accessible": true,
-                  "location": [
-                      {
-                          "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
-                          "name": "Europe"
-                      }
-                  ]
-              },
-              {
-                  "id": "A001-02",
-                  "name": "WTI",
-                  "type": "Grade",
-                  "frequency": "Monthly",
-                  "accessible": true,
-                  "location": [
-                      {
-                          "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
-                          "name": "Europe"
-                      }
-                  ]
-              }
+    "sub_category": {
+      "uuid": "756ac8e1-ea7f-11ea-acc0-0a730e7eabfe",
+      "name": "Crude oil",
+      "id": "A001",
+      "price_type": "price_direct",
+      "cost_structure": {
+        "available": false,
+        "location": []
+      },
+      "grades": [{
+          "id": "A001-03",
+          "name": "Crude Oil (Intratec)",
+          "type": "Grade",
+          "frequency": "Monthly",
+          "accessible": true,
+          "location": [{
+              "id": "AE",
+              "name": "United Arab Emirates"
+            },
+            {
+              "id": "GB",
+              "name": "United Kingdom"
+            },
+            {
+              "id": "NG",
+              "name": "Nigeria"
+            },
+            {
+              "id": "US",
+              "name": "USA"
+            }
           ]
-      }
+        },
+        {
+          "id": "A001-01",
+          "name": "Brent",
+          "type": "Grade",
+          "frequency": "Monthly",
+          "accessible": true,
+          "location": [{
+            "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
+            "name": "Europe"
+          }]
+        },
+        {
+          "id": "A001-02",
+          "name": "WTI",
+          "type": "Grade",
+          "frequency": "Monthly",
+          "accessible": true,
+          "location": [{
+            "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
+            "name": "Europe"
+          }]
+        }
+      ]
+    }
   },
   "status": {
-      "code": "beroebot.market-monitor-002",
-      "msg": "Request Processed",
-      "rts": 1632821910303,
-      "cache": false,
-      "params": {
-          "sub_category_id": "A001"
-      },
-      "version": {
-          "version": "3.0.0-SNAPSHOT",
-          "codename": "CLOVA",
-          "branch": "dev",
-          "revision": "0b3bc82",
-          "basetag": ""
-      },
-      "rms": 3620
+    "code": "beroebot.market-monitor-002",
+    "msg": "Request Processed",
+    "rts": 1632821910303,
+    "cache": false,
+    "params": {
+      "sub_category_id": "A001"
+    },
+    "version": {
+      "version": "3.0.0-SNAPSHOT",
+      "codename": "CLOVA",
+      "branch": "dev",
+      "revision": "0b3bc82",
+      "basetag": ""
+    },
+    "rms": 3620
   }
 }
 //Do not have price data
 const no_price_structure = {
   "response": {
-      "sub_category": {
-          "uuid": "756ad3c9-ea7f-11ea-acc0-0a730e7eabfe",
-          "name": "Water",
-          "id": "D338",
-          "price_type": null,
-          "cost_structure": {
-              "available": true,
-              "location": [
-                  {
-                      "id": "GB",
-                      "name": "United Kingdom",
-                      "frequency": "Quarterly"
-                  },
-                  {
-                      "id": "US",
-                      "name": "USA",
-                      "frequency": "Quarterly"
-                  }
-              ]
+    "sub_category": {
+      "uuid": "756ad3c9-ea7f-11ea-acc0-0a730e7eabfe",
+      "name": "Water",
+      "id": "D338",
+      "price_type": null,
+      "cost_structure": {
+        "available": true,
+        "location": [{
+            "id": "GB",
+            "name": "United Kingdom",
+            "frequency": "Quarterly"
           },
-          "grades": []
-      }
+          {
+            "id": "US",
+            "name": "USA",
+            "frequency": "Quarterly"
+          }
+        ]
+      },
+      "grades": []
+    }
   },
   "status": {
-      "code": "beroebot.market-monitor-002",
-      "msg": "Request Processed",
-      "rts": 1632968930062,
-      "cache": false,
-      "params": {
-          "sub_category_id": "D338"
-      },
-      "version": {
-          "version": "3.0.0-SNAPSHOT",
-          "codename": "CLOVA",
-          "branch": "dev",
-          "revision": "60d1bb8",
-          "basetag": ""
-      },
-      "rms": 141
+    "code": "beroebot.market-monitor-002",
+    "msg": "Request Processed",
+    "rts": 1632968930062,
+    "cache": false,
+    "params": {
+      "sub_category_id": "D338"
+    },
+    "version": {
+      "version": "3.0.0-SNAPSHOT",
+      "codename": "CLOVA",
+      "branch": "dev",
+      "revision": "60d1bb8",
+      "basetag": ""
+    },
+    "rms": 141
   }
 }
 
-const formcept_data = [];
-formcept_data.push(complete);
-formcept_data.push(no_cost_structure);
-formcept_data.push(no_price_structure);
+
+let formcept_data = [{
+    "sub_category": {
+      "uuid": "756ad3b7-ea7f-11ea-acc0-0a730e7eabfe",
+      "name": "Natural Gas",
+      "id": "D335",
+      "price_type": "price_direct",
+      "cost_structure": {
+        "available": true,
+        "location": [{
+            "id": "AU",
+            "name": "Australia",
+            "frequency": "Annual"
+          },
+          {
+            "id": "US",
+            "name": "USA",
+            "frequency": "Annual"
+          }
+        ]
+      },
+      "grades": [{
+        "id": "D335-01",
+        "name": "Industrial Natural Gas",
+        "type": "Grade",
+        "frequency": "Monthly",
+        "accessible": true,
+        "location": [{
+            "id": "BM,CA,GL,PM,US",
+            "name": "North America"
+          },
+          {
+            "id": "AF,AM,AZ,BD,BT,CN,GE,HK,IN,IR,JP,KZ,KR,KP,KG,MO,MV,MN,NP,PK,LK,TW,TJ,TM,UZ",
+            "name": "Asia"
+          },
+          {
+            "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
+            "name": "Europe"
+          }
+        ]
+      }]
+    }
+  },
+  {
+    "sub_category": {
+      "uuid": "756ac8e1-ea7f-11ea-acc0-0a730e7eabfe",
+      "name": "Crude oil",
+      "id": "A001",
+      "price_type": "price_direct",
+      "cost_structure": {
+        "available": false,
+        "location": []
+      },
+      "grades": [{
+          "id": "A001-03",
+          "name": "Crude Oil (Intratec)",
+          "type": "Grade",
+          "frequency": "Monthly",
+          "accessible": true,
+          "location": [{
+              "id": "AE",
+              "name": "United Arab Emirates"
+            },
+            {
+              "id": "GB",
+              "name": "United Kingdom"
+            },
+            {
+              "id": "NG",
+              "name": "Nigeria"
+            },
+            {
+              "id": "US",
+              "name": "USA"
+            }
+          ]
+        },
+        {
+          "id": "A001-01",
+          "name": "Brent",
+          "type": "Grade",
+          "frequency": "Monthly",
+          "accessible": true,
+          "location": [{
+            "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
+            "name": "Europe"
+          }]
+        },
+        {
+          "id": "A001-02",
+          "name": "WTI",
+          "type": "Grade",
+          "frequency": "Monthly",
+          "accessible": true,
+          "location": [{
+            "id": "AX,AL,AD,AT,BY,BE,BA,BG,HR,CZ,DK,EE,FO,FI,FR,DE,GI,GR,GG,VA,HU,IS,IE,IM,IT,JE,LV,LI,LT,LU,MT,MD,MC,ME,NL,MK,NO,PL,PT,RO,RU,SM,RS,SK,SI,ES,SJ,SE,CH,UA,GB,XK",
+            "name": "Europe"
+          }]
+        }
+      ]
+    }
+  }, {
+    "sub_category": {
+      "uuid": "756ad3c9-ea7f-11ea-acc0-0a730e7eabfe",
+      "name": "Water",
+      "id": "D338",
+      "price_type": null,
+      "cost_structure": {
+        "available": true,
+        "location": [{
+            "id": "GB",
+            "name": "United Kingdom",
+            "frequency": "Quarterly"
+          },
+          {
+            "id": "US",
+            "name": "USA",
+            "frequency": "Quarterly"
+          }
+        ]
+      },
+      "grades": []
+    }
+  }
+]
 
 console.log(formcept_data)
 
-let random_data = formcept_data[Math.floor(Math.random() * formcept_data.length)]
+// check if category_exist = true/false/null
+// get the user_cat_req and run it by the list_of_category_available
 
-console.log(random_data);
+// to check, we need Levenshtein distance
 
-let check_grade =  random_data.response.sub_category.grades.length; // array
-let check_cost_strucuture =  random_data.response.sub_category.cost_structure.available; // boolean
-let check_complete = false;
+let js_data = await this.mergeFields['jsPriceCostParams'].get();
+let data = {};
+data.score = [];
+data.exit_nodes = {};
 
-console.log("grade: " + check_grade)
-console.log("cost: " + check_cost_strucuture)
-
-// "loctype": "country",
-// "user_loc_spec": "countryRegion",
-// "msg": "",
-// "select": null
-
-// check loctype (region or country) 
-// if user is checking in region and loctype is country say "we only have this category in a country scope"
-// if user is checking in country and loctype is region, say "we only have this category in regional scope"
-let loctype = "continent";
-let userReq_is_region = "countryRegion";
-let category_name = null;
-let is_geo = true
-
-let res = {};
-res.loctype = loctype;
-res.user_loc_spec = userReq_is_region;
-res.msg = '';
-res.select = null;
-
-if (is_geo) {
-  console.log("is geo region")
-  if (userReq_is_region == "continent" && loctype == "continent") {
-    res.msg = `Ok.  Give me a moment please`;
+// Levenshtein distance
+function similarity(s1, s2) {
+  var longer = s1;
+  var shorter = s2;
+  if (s1.length < s2.length) {
+    longer = s2;
+    shorter = s1;
   }
-  if (userReq_is_region == "continent" && loctype == "countryRegion") {
-    res.msg = `I understand your looking for data in a specific region.  But this category is available on a country scope.`;
-    res.select = "Please provide the country name."
+  var longerLength = longer.length;
+  if (longerLength == 0) {
+    return 1.0;
+  }
+  return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
+}
 
+function editDistance(s1, s2) {
+  s1 = s1.toLowerCase();
+  s2 = s2.toLowerCase();
+
+  var costs = new Array();
+  for (var i = 0; i <= s1.length; i++) {
+    var lastValue = i;
+    for (var j = 0; j <= s2.length; j++) {
+      if (i == 0)
+        costs[j] = j;
+      else {
+        if (j > 0) {
+          var newValue = costs[j - 1];
+          if (s1.charAt(i - 1) != s2.charAt(j - 1))
+            newValue = Math.min(Math.min(newValue, lastValue),
+              costs[j]) + 1;
+          costs[j - 1] = lastValue;
+          lastValue = newValue;
+        }
+      }
+    }
+    if (i > 0)
+      costs[s2.length] = lastValue;
   }
-  if (userReq_is_region == "countryRegion" && loctype == "continent") {
-    res.msg = `I understand your looking for data in a specific country.  But this category is available on a regional scope.`;
-    res.select = "Please provide a region (e,g. Asia, Europe, North America, Middle East...)."
+  return costs[s2.length];
+}
+
+// CATEGORY LIST CHECK if user_req matches one of the LIST// category list  
+let cat_list = await this.mergeFields['trigCategoryList'].get({
+  path: "list"
+});
+
+// check if user_req matches cat_list
+for (let index = 0; index < cat_list.length; index++) {
+  const element = cat_list[index];
+  console.log("data_cat_name: " + element.sub_category.name.toLowerCase())
+  console.log("KeyNameEntity: " + js_data.KeyNameEntity)
+
+  let score = similarity(element.sub_category.name.toLowerCase(), js_data.KeyNameEntity.toLowerCase());
+  data.score.push(score)
+  if (score === 1 || (score > 0.85)) {
+    data.data_matched = element.sub_category
   }
-  if (userReq_is_region == "countryRegion" && loctype == "countryRegion") {
-    res.msg = `Ok.  Give me a moment please`;
-  }
+  console.log("===============")
+}
+
+if (data.score.includes(1)) {
+  data.is_match = true;
 } else {
-  console.log("is NOT geo region")
-  if (loctype == "continent") {
-    res.msg = "Please provide a region (e,g. Asia, Europe, North America, Middle East...)."
+  data.is_match = false;
+  data.highest_score = Math.max(...data.score);
+  if (data.highest_score == 1) {
+    data.exit_nodes.match = "match";
   }
-  if (loctype == "countryRegion") {
-    res.msg = "Please provide a country."
+  if (1 > data.highest_score > 0.85) {
+    data.exit_nodes.match = "unsure";
+  }
+  if (data.highest_score < 0.85) {
+    data.exit_nodes.match = "not_match";
   }
 }
 
-console.log(res)
+return data;
+
+// if category_exist then we save data and construct the requirement_scopes available - prioritze GRADE and its meta data
+
+// {
+//   "grade":null,
+//   "grades":null,
+//   "frequency":null,
+//   "region":null
+// }
