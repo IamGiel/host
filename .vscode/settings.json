@@ -33,14 +33,14 @@
     // "editor.fontFamily": "Lato',Sans-serif",
     // "editor.fontFamily": "Consolas",
     // "editor.fontFamily": "Fira Code",
-    "editor.fontFamily": "Verdana",
+    "editor.fontFamily": "Monaco",
     // "editor.fontFamily": "Menlo",
     // "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
 
 
-    "editor.fontSize": 12,
-    "terminal.integrated.fontFamily": "Consolas",
-    "terminal.integrated.fontSize": 14,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontFamily": "Monaco",
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.lineHeight": 1,
     "editor.tabSize": 2,
 
