@@ -645,7 +645,7 @@ console.log(cat_list)
 // to check, we need Levenshtein distance
 
 let js_data = {};
-js_data.KeyNameEntity = "Water";
+js_data.KeyNameEntity = "Natural Gas"; // TEST TERM HERE
 
 
 let data = {};
@@ -729,7 +729,32 @@ if (data.score.includes(1)) {
   }
 }
 
+
+if(data.is_match == true){
+  // check grade if has data
+  console.log(data.data_matched.grades)
+  if(data.data_matched.grades.length == 0){
+    console.log("theres no grades data, therefore we check cost_structure for data checks")
+  } else {
+    console.log("there data for grades! Lets check grade, grades, frequency, frequencies, and region - (country or region)")
+    data.frequency = data.data_matched.grades[0].frequency;
+    data.gradeID = data.data_matched.grades[0].id;
+    let loctypes = [];
+    for (let i = 0; i < data.data_matched.grades[0].location.length; i++) {
+      const loc = data.data_matched.grades[0].location[i];
+      console.log(loc)
+      loctypes.push(loc["name"])
+      console.log(loctypes)
+      
+    }
+    
+    data.location_types = loctypes;
+    
+  }
+}
+
 console.log(data)
+
 
 // if category_exist then we save data and construct the requirement_scopes available - prioritze GRADE and its meta data
 
