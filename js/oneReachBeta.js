@@ -1698,20 +1698,34 @@ for (let i = 0; i < categories.length; i++) {
 
 
 
-  console.log(luis_resource)~
+  console.log(luis_resource)
 
   let intents = luis_resource.prediction.intents;
   console.log(intents)
 
-  console.log("object.values: ",Object.values(intents))
-  console.log("object.keys: ",Object.keys(intents))
+//   console.log("object.values: ",Object.values(intents))
+//   console.log("object.keys: ",Object.keys(intents))
 
-  const result = Object.keys(users).reduce((acc, curr) =>    
-       acc.age ? (users[curr].age > acc.age ? users[curr] : acc) : users[curr], {});
+//   const result = Object.keys(users).reduce((acc, curr) =>    
+//        acc.age ? (users[curr].age > acc.age ? users[curr] : acc) : users[curr], {});
 
-  console.log(result)
+//   console.log(result)
 
 
-  console.log("topIntent: ", luis_resource.prediction.topIntent)
+//   console.log("topIntent: ", luis_resource.prediction.topIntent)
 
+
+  let input =   [
+    [ 1, 1, 1, 0, 0, 0 ],
+    [ 0, 1, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 0, 0, 0 ],
+    [ 0, 0, 2, 4, 4, 0 ],
+    [ 0, 0, 0, 2, 0, 0 ],
+    [ 0, 0, 1, 2, 4, 0 ]
+  ];
+
+  console.log(input)
+
+let topI = input[0] 
+ 
 

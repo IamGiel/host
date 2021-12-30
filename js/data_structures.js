@@ -1,120 +1,149 @@
-// get NLU data
-// let paramsObj = await this.mergeFields['apiShortlist'].get({
-//     path: 'params'
-//   });
-  let paramsObj = {
-    "flowId": "api shortlist",
-    "isSync": false,
-    "qualification": "state",
-    "qualificationSubFilter": "India::Karnataka::Maharashtra",
-    "location": "India",
-    "diversity": "",
-    "supplierName": "",
-    "narrowSearchExit": "true",
-    "eventId": "sszQUpMpo4WHMRPMizygV1"
-  }
-  let params = {};
-  let qual = `{${paramsObj.qualification} : ${paramsObj.qualification}}`;
-  
-  function getLocation() {
-    if (paramsObj.location != 'null' ) {
-      params.location = [{
-        "zipCode": "",
-        "country": `${paramsObj.location}`,
-        "state": "",
-        "city": ""
-      }]
-      if(paramsObj.qualification == 'state'){
-        params.location = [{
-            "zipCode": "",
-            "country": `${paramsObj.location}`,
-            "state": `${paramsObj.qualificationSubFilter.replace(/^[^_]*::/,'')}`,
-            "city": ""
-          }]
-      }
-      if(paramsObj.qualification == 'city'){
-        params.location = [{
-            "zipCode": "",
-            "country": `${paramsObj.location}`,
-            "state": "",
-            "city": `${paramsObj.qualificationSubFilter.replace(/^[^_]*::/,'')}`
-          }]
-      }
-    }
-    else {
-      params.location = [{
-        "zipCode": "",
-        "country": "",
-        "state": "",
-        "city": ""
-      }];
-    }
-  }
-  
-  // {
-  //   "flowId": "api shortlist",
-  //   "isSync": false,
-  //   "qualification": "null",
-  //   "location": "null",
-  //   "diversity": "",
-  //   "narrowSearchExit": "",
-  //   "subfilters": "",
-  //   "SupplierOrCategoryName": "ball Corp",
-  //   "eventId": "5NFU887TK8dT8UYRw97fTZ"
-  // }
-  
-  function getQual() {
-    params.qualification = [];
-   if (paramsObj.qualification !== 'city' && paramsObj.qualification !== 'state') {
-     let key = paramsObj.qualification;
-     let val = paramsObj.qualificationSubFilter
-     if (key !== null) {
-       let parameter = {};
-       parameter[key] = val;
-       console.log(parameter)
-       params.qualification.push(parameter)
-     } else {
-       params.qualification = [];
-     }
-   } else {
-       params.qualification = [];
-     }
- }
-  function getCatOrSupName() {
-    if ("SupplierOrCategoryName" in paramsObj && paramsObj.SupplierOrCategoryName !== 'undefined') {
-      params.SupplierOrCategoryName = `${paramsObj.SupplierOrCategoryName}`
-    } else {
-      params.SupplierOrCategoryName = null;;
-    }
-  }
-  function getSupplierName() {
-    if ("supplierName" in paramsObj && paramsObj.supplierName !== '') {
-      params.supplierName = `${paramsObj.supplierName}`
-    } else {
-      params.supplierName = null;;
-    }
-  }
-  
-  getLocation();
-  getQual();
-  // getSupplierName();
-  getCatOrSupName();
-  
-//   return params;
-console.log(params)
 
-let test_string = "India::Karnataka::Maharashtra";
+// {
+//   "luisGeo": {
+//     "location_type": "countryRegion",
+//     "location": "usa"
+//   },
+//   "jsGeo": {}
+// }
 
-console.log(test_string.replace(/::/g,'/'))
 
-// =================================================
+// {
+//   "luisGeo": {
+//     "location_type": "countryRegion",
+//     "location": "usa"
+//   },
+//   "jsGeo": {
+//     "location_": "usa",
+//     "location_type": "countryRegion"
+//   }
+// }
 
-const fib = (n) => {
-    if(n <= 2) return 1; 
-    let test =  fib(n-1) + fib(n-2);
-    console.log(test)
-    return fib(n-1) + fib(n-2);
-   
+
+// let test_res = {
+//   "geography": {
+//     "entity": "geographyV2",
+//     "value": [{
+//       "value": "mexico",
+//       "type": "countryRegion"
+//     }],
+//     "parsedValue": [{
+//       "value": "mexico",
+//       "type": "countryRegion"
+//     }],
+//     "geo": true
+//   },
+//   "mentions_diversity": "true",
+//   "keyname": "shoe",
+//   "total": "12",
+//   "pluralize": "results",
+//   "diversityEntity": "women owned"
+// }
+
+
+let data = {};
+
+
+
+// let mentions_diversity = await this.mergeFields['storeNluEntities'].get({
+//   path: 'mentionsDiversity'
+// });
+// let keyName = await this.mergeFields['storeNluEntities'].get({
+//   path: 'keyNameEntity'
+// });
+// let hasSubfilter = await this.mergeFields['selectSubfilter'].get({path:"myData"})
+// let totalResponse = parseInt(await this.mergeFields['apiShortlistResponse'].get({path: 'total'})).toLocaleString();
+// let diversityEntity = await this.mergeFields['storeNluEntities'].get({path: 'diversityEntity'});
+// let luisGeo = await this.mergeFields['storeNluEntities'].get({path: 'geographyV2.location'})
+
+function valid(input) {
+  switch (input) {
+    case undefined:
+      return false;
+      break;
+
+    case "undefined":
+      return false;
+      break;
+
+    case null:
+      return false;
+      break;
+
+    default:
+      return true;
+  }
 }
 
-console.log(fib(7)) 
+function pluralize(word, stringNum) {
+  if (parseInt(stringNum) > 1) {
+    switch (word) {
+      case "is":
+        return "are";
+        break;
+      case word:
+        return word + "s"
+        break;
+      default:
+        return;
+    }
+  }
+
+  if (parseInt(stringNum) <= 1) {
+    switch (word) {
+      case "are":
+        return "is";
+        break;
+      default:
+        return word;
+    }
+  }
+}
+
+
+
+// // TEST 
+
+data.mentions_diversity = true;
+data.keyname = "cans";
+data.location_ = "usa";
+data.total = "4";
+data.pluralize = pluralize("result", data.total);
+data.diversityEntity = null;
+
+// // end 
+
+let message_obj = {
+  "withLocWithDiversity":`I found ${data.total} ${pluralize("result", data.total)} for "${data.diversityEntity}" and "${data.keyname}" in ${data.location_}. Here ${pluralize("is",data.total)} the top ${pluralize("result",data.total)}: `,
+  "withLocWithoutDiversity":`I found ${data.total} ${pluralize("result", data.total)} for "${data.keyname}" in ${data.location_}. Here ${pluralize("is",data.total)} the top ${pluralize("result",data.total)}: `,
+  "withoutLocWithDiversity":`I found ${data.total} ${pluralize("result", data.total)} for "${data.diversityEntity}" and "${data.keyname}". Here ${pluralize("is",data.total)} the top ${pluralize("result",data.total)}: `,
+  "withoutLocWithoutDiversity":`I found ${data.total} ${pluralize("result", data.total)} for "${data.keyname}". Here ${pluralize("is",data.total)} the top ${pluralize("result",data.total)}: `,
+
+}
+
+function resolveMessage(loc, diversity) {
+
+  console.log(loc)
+  console.log(diversity)
+  let message;
+  if(loc && diversity){
+    message = message_obj.withLocWithDiversity;
+  }
+  if(loc && !diversity){
+    message = message_obj.withLocWithoutDiversity;
+  }
+  if(!loc && diversity){
+    message = message_obj.withoutLocWithDiversity;
+  }
+  if(!loc && !diversity){
+    message = message_obj.withoutLocWithoutDiversity;
+  }
+  return message;
+}
+
+console.log(resolveMessage(data.location_, data.diversityEntity))
+
+return resolveMessage(data.location_, data.diversityEntity);
+
+
+
