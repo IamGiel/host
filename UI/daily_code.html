@@ -11,10 +11,71 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
 </head>
 
+
+<style>
+  #book-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+  }
+  ol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: system-ui;
+  }
+</style>
+
 <body>
-    <span>check console to be 🚀 🤯 away!</span>
+    <div>
+      <!-- <span>check console to be 🚀 🤯 away!</span><br> -->
+    </div>
+    <div>
+      <h2>Compare two strings: </h2>
+    </div>
+    <div>
+      <label for="db_string">DB string:</label>
+      <input type="text" onkeyup="trackChangeDBString(this.value)" id="db_string" name="db_string">
+    </div>
+    <br>
+    <div>
+      <label for="user_input">Random string:</label>
+      <input type="text" onkeyup="trackChangeUserString(this.value)" id="user_input">
+    </div>
+
+    <br>
+
+    <button type="submit"onclick="compare()">Compare</button>
+
+    <div class="result">
+        <div class="leven">
+          <p>Lavenshtein score   (levenshtein distance score 0 is most confident) : <span id="laven"></span></p> 
+        </div>
+        <div class="diceTheory">
+          <p>Dice Thoery score (Dice theory score 1 is most confident) : <span id="dice"></span></p> 
+        </div>
+    </div>
+    <hr>
+    <div class="graphQLForm">
+      <div>
+        <h2>GrapQL Section</h2>
+      </div>
+      <form id="book-search">
+        <input type="text" id="search" name="search" placeholder="Search..." autocomplete="off" />
+        <button type="submit">Enter</button>
+      </form>
+      <div id="book-container"></div>
+    </div>
+
+
     <script src="../js/daily_code.js"></script>
+
+  
+    <!-- <script src="../codewars/maxSequence.js"></script> -->
+    
 </body>
+
 
 
 </html>
